@@ -1,8 +1,8 @@
 import { Flex } from "antd";
 import { useLayoutContext } from "../Index";
 import Logo from "../../components/Logo";
-// import TopNav from "./PC/TopNav";
-// import BurgerTopNav from "./Mobile/BurgerTopNav";
+import TopNav from "./PC/TopNav";
+import BurgerTopNav from "./Mobile/BurgerTopNav";
 import GroupButton from "./GroupButton";
 import { Link } from "react-router";
 import UserActionDropdown from "./PC/UserActionDropDown";
@@ -18,20 +18,20 @@ export default function BaseHeader({ ...rest }) {
         align="center"
         className="max-w-screen-xl mx-auto py-2 lg:px-8 px-4"
       >
-        {/* <DeviceProvider.MOBILE>
+        <DeviceProvider.MOBILE>
           <BurgerTopNav />
-        </DeviceProvider.MOBILE> */}
+        </DeviceProvider.MOBILE>
         <Link to="/">
           <Logo />
         </Link>
 
         <DeviceProvider.PC>
-          {/* <TopNav /> */}
+          <TopNav />
           <UserActionDropdown />
         </DeviceProvider.PC>
 
         <DeviceProvider.TABLET>
-          {/* <TopNav /> */}
+          <TopNav />
           <UserActionDrawer />
         </DeviceProvider.TABLET>
 

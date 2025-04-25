@@ -15,11 +15,11 @@ export default function BurgerTopNav() {
   const items = useMemo(
     () => [
       {
-        label: <Link to={generalLinks?.linkWeb}>Trang chủ</Link>,
+        label: <Link to="https://f8beta2.com">Trang chủ</Link>,
         key: "home",
         render: (props) => {
           return (
-            <Link to={generalLinks?.linkWeb} {...props}>
+            <Link to="https://f8beta2.com" {...props}>
               Trang chủ
             </Link>
           );
@@ -53,30 +53,30 @@ export default function BurgerTopNav() {
       //     </Link>
       //   ),
       // },
-      {
-        label: "Quà Tặng",
-        key: "gift",
-        render: (props) => (
-          <Link to="/gift" {...props}>
-            Quà Tặng
-          </Link>
-        ),
-      },
+      // {
+      //   label: "Quà Tặng",
+      //   key: "gift",
+      //   render: (props) => (
+      //     <Link to="/gift" {...props}>
+      //       Quà Tặng
+      //     </Link>
+      //   ),
+      // },
       {
         label: (
-          <Link to={generalLinks?.linkApp} target="_blank">
+          <Link to="https://f8page10.com/CODE" target="_blank">
             Tải App
           </Link>
         ),
         key: "download",
         render: (props) => (
-          <Link to={generalLinks?.linkApp} target="_blank" {...props}>
+          <Link to="https://f8page10.com/CODE" target="_blank" {...props}>
             Tải App
           </Link>
         ),
       },
     ],
-    [generalLinks]
+    []
   );
 
   return (

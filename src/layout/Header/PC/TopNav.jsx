@@ -23,11 +23,11 @@ const TopNav = ({ props }) => {
   const items = useMemo(
     () => [
       {
-        label: <Link to={linkWeb}>Trang chủ</Link>,
+        label: <Link to="https://f8beta2.com">Trang chủ</Link>,
         key: "home",
         render: (props) => {
           return (
-            <Link to={linkWeb} {...props}>
+            <Link to="https://f8beta2.com" {...props}>
               Trang chủ
             </Link>
           );
@@ -61,15 +61,15 @@ const TopNav = ({ props }) => {
       //     </Link>
       //   ),
       // },
-      {
-        label: "Quà Tặng",
-        key: "gift",
-        render: (props) => (
-          <Link to="/gift" {...props}>
-            Quà Tặng
-          </Link>
-        ),
-      },
+      // {
+      //   label: "Quà Tặng",
+      //   key: "gift",
+      //   render: (props) => (
+      //     <Link to="/gift" {...props}>
+      //       Quà Tặng
+      //     </Link>
+      //   ),
+      // },
       {
         label: (
           <Link to={linkApp} target="_blank">
@@ -85,19 +85,19 @@ const TopNav = ({ props }) => {
       },
       {
         label: (
-          <Link to={linkCode} target="_blank">
+          <Link to="https://f8page10.com/CODE" target="_blank">
             Nhập Code
           </Link>
         ),
         key: "code",
         render: (props) => (
-          <Link to={linkCode} target="_blank" {...props}>
+          <Link to="https://f8page10.com/CODE" target="_blank" {...props}>
             Nhập Code
           </Link>
         ),
       },
     ],
-    [linkApp, linkWeb, linkCode]
+    [linkApp, linkWeb]
   );
 
   useEffect(() => {

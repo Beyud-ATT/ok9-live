@@ -65,13 +65,13 @@ export default function BurgerTopNav() {
       {
         label: (
           <Link to="https://f8page10.com/CODE" target="_blank">
-            Tải App
+            Nhập Code
           </Link>
         ),
         key: "download",
         render: (props) => (
           <Link to="https://f8page10.com/CODE" target="_blank" {...props}>
-            Tải App
+            Nhập Code
           </Link>
         ),
       },

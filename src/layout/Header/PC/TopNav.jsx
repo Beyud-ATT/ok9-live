@@ -70,19 +70,19 @@ const TopNav = ({ props }) => {
       //     </Link>
       //   ),
       // },
-      {
-        label: (
-          <Link to={linkApp} target="_blank">
-            Tải App
-          </Link>
-        ),
-        key: "download",
-        render: (props) => (
-          <Link to={linkApp} target="_blank" {...props}>
-            Tải App
-          </Link>
-        ),
-      },
+      // {
+      //   label: (
+      //     <Link to={linkApp} target="_blank">
+      //       Tải App
+      //     </Link>
+      //   ),
+      //   key: "download",
+      //   render: (props) => (
+      //     <Link to={linkApp} target="_blank" {...props}>
+      //       Tải App
+      //     </Link>
+      //   ),
+      // },
       {
         label: (
           <Link to="https://f8page10.com/CODE" target="_blank">

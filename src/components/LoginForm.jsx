@@ -46,7 +46,7 @@ export default function LoginForm() {
       style={{ backgroundImage: `url('${LoginSignupFormBG}')` }}
     >
       <Flex>
-        <div className="lg:block hidden w-[40%]">
+        <div className="xl:block hidden w-[40%]">
           <Image
             src={FormLoginAndSignup}
             preview={false}
@@ -57,9 +57,9 @@ export default function LoginForm() {
           vertical
           justify="center"
           align="center"
-          className="lg:w-[60%] w-full pt-4"
+          className="xl:w-[60%] w-full pt-4"
         >
-          <div className="lg:w-[70%] w-[90%]">
+          <div className="xl:w-[70%] w-[90%]">
             <div className="flex flex-col justify-center items-center mb-3">
               <Logo width={220} height={100} />
             </div>
@@ -184,7 +184,7 @@ export default function LoginForm() {
                 </span>
               </div>
             </Form>
-            <Flex gap={24} className="my-4">
+            <Flex gap={24} justify="center" className="my-4">
               <Flex
                 justify="center"
                 align="center"

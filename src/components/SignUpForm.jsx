@@ -45,7 +45,7 @@ export default function SignUpForm() {
       style={{ backgroundImage: `url('${LoginSignupFormBG}')` }}
     >
       <Flex className="rounded-2xl">
-        <div className="w-[40%] lg:block hidden">
+        <div className="w-[40%] xl:block hidden">
           <Image
             src={FormLoginAndSignup}
             preview={false}
@@ -56,9 +56,9 @@ export default function SignUpForm() {
           vertical
           justify="center"
           align="center"
-          className="lg:w-[60%] w-full pt-4"
+          className="xl:w-[60%] w-full pt-4"
         >
-          <div className="lg:w-[70%] w-[90%]">
+          <div className="xl:w-[70%] w-[90%]">
             <div className="flex flex-col justify-center items-center mb-8">
               <Logo width={220} height={100} />
             </div>

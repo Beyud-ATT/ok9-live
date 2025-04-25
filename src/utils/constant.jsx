@@ -27,8 +27,8 @@ const UserType = {
 
 const chatHeightSetting = `xl:h-[525px] lg:h-[390px] md:h-[285px]`;
 
-const videoHeightSettingInRoom = `xl:h-[504px] lg:h-[371px] md:h-[265px] h-[200px]`;
-const videoHeightSettingInHome = `xl:h-[575px] lg:h-[430px] md:h-[330px] h-[200px]`;
+const videoHeightSettingInRoom = `xl:h-[488px] lg:h-[371px] md:h-[265px] h-[200px]`;
+const videoHeightSettingInHome = `xl:h-[510px] lg:h-[430px] md:h-[330px] h-[200px]`;
 
 const GIFTS = [
   {

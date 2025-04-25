@@ -54,7 +54,7 @@ function TestimonialItem() {
       <div className="bg-[url('/src/assets/testimonial-bg.png')] bg-contain bg-center bg-no-repeat">
         <p className="text-justify text-white md:text-[15px] text-[12px] font-[510] md:w-[60%] w-[70%] mx-auto py-10">
           Wow thật không ngờ đến thế mình vừa trúng 1 iphone 16 Promax, vừa đăng
-          nhập vào NEW88 đã may nắm đến vậy, cảm ơn NEW88 về món quà giá trị này
+          nhập vào F8BET đã may nắm đến vậy, cảm ơn F8BET về món quà giá trị này
         </p>
       </div>
     </div>

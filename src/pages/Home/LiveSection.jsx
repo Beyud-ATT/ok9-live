@@ -2,6 +2,7 @@ import { Col, Image, Row, Spin } from "antd";
 import useLiveHot from "../../hooks/useLiveHot";
 import LivestreamPlayer from "../../components/VideoPlayer";
 import { useEffect, useState } from "react";
+import DefaultBanner from "../../assets/default-banner.webp";
 
 const LiveSection = () => {
   const { data, isLoading } = useLiveHot();
@@ -52,10 +53,7 @@ const LiveSection = () => {
                 >
                   <Image
                     alt="Stream"
-                    src={
-                      stream.thumbnail ??
-                      "https://newlive.sgp1.cdn.digitaloceanspaces.com/newlive/photo_2025-01-27_19-07-46.jpg"
-                    }
+                    src={stream.thumbnail ?? DefaultBanner}
                     className={`md:!w-[85%] md:!h-auto !w-[100px] !h-[55px] mx-auto object-cover aspect-video p-0.5 rounded-lg cursor-pointer ${
                       isSelected ? "bg-[var(--color-brand-primary)]" : ""
                     }`}
@@ -66,7 +64,7 @@ const LiveSection = () => {
                   <i
                     className={`${
                       isSelected
-                        ? "new88-icon-banner-arrow-left z-0 md:block hidden"
+                        ? "f8bet-icon-banner-arrow-left z-0 md:block hidden"
                         : ""
                     }`}
                   ></i>

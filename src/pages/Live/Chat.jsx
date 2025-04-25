@@ -130,7 +130,7 @@ function PinnedMessage() {
 }
 
 function WarningAndPinnedComment() {
-  const message = `Chào mừng bạn đến với phòng phát trực tiếp của NEW88 Live thiết lập
+  const message = `Chào mừng bạn đến với phòng phát trực tiếp của F8BET Live thiết lập
           môi trường live thân thiện và hài hòa. Mọi nội dung lạm dụng, thô tục
           hoặc bạo lực sẽ bị chặn. Hãy chú ý an toàn tài sản của bạn, không
           chuyển tiền riêng, tránh bị lừa đảo.`;

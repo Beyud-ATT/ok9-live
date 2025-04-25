@@ -24,6 +24,8 @@ import {
   videoHeightSettingInRoom,
 } from "../utils/constant";
 
+import DefaultBanner from "../assets/default-banner.webp";
+
 const LivestreamPlayer = ({ liveId }) => {
   const pathname = useLocation().pathname;
   const isLivePage = pathname.includes("/live/");
@@ -348,7 +350,7 @@ const LivestreamPlayer = ({ liveId }) => {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: "New88 Live",
+        title: "F8BET Live",
         text: "Hãy xem thử livestream của chúng tôi!!!",
         url: window.location.href,
       });
@@ -372,10 +374,7 @@ const LivestreamPlayer = ({ liveId }) => {
               className="w-full h-full "
             >
               <Image
-                src={
-                  liveDetailData?.thumbnail ??
-                  "https://newlive.sgp1.cdn.digitaloceanspaces.com/newlive/photo_2025-01-27_19-07-46.jpg"
-                }
+                src={liveDetailData?.thumbnail ?? DefaultBanner}
                 preview={false}
                 loading="lazy"
               />

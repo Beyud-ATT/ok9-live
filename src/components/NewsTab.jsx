@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import useHomeNews from "../hooks/useHomeNews";
 import Left from "../assets/left.webp";
 import Right from "../assets/right.webp";
+import DefaultBanner from "../assets/default-banner.webp";
 
 function NewsTab() {
   const [activeTab, setActiveTab] = useState(null);
@@ -10,18 +11,30 @@ function NewsTab() {
   const news = data?.data?.data;
   let i = 1;
 
-  const homeNews = useMemo(() => {
-    return news
-      ? news?.map((item) => {
-          return {
-            content: item.content,
-            image: item.image,
-            description: "",
-            id: `tab${i++}`,
-          };
-        })
-      : [];
-  }, [news, i]);
+  // const homeNews = useMemo(() => {
+  //   return news
+  //     ? news?.map((item) => {
+  //         return {
+  //           content: item.content,
+  //           image: item.image,
+  //           description: "",
+  //           id: `tab${i++}`,
+  //         };
+  //       })
+  //     : [];
+  // }, [news, i]);
+
+  const homeNews = useMemo(
+    () => [
+      {
+        content: "Xem Live cùng F8BET",
+        image: DefaultBanner,
+        description: "",
+        id: 1,
+      },
+    ],
+    []
+  );
 
   useEffect(() => {
     setActiveTab(homeNews[0]?.id);

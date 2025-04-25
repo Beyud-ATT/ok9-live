@@ -53,11 +53,11 @@ export default function GiftDetail() {
               className="my-2 xl:text-3xl lg:text-xl text-sm !font-times"
             >
               <p>
-                * Tất cả hội viên tham gia tại NEW88 chỉ cần đạt từ VIP 3 trở
+                * Tất cả hội viên tham gia tại F8BET chỉ cần đạt từ VIP 3 trở
                 lên đều có thể đăng ký nhận quà.
               </p>
               <p>
-                * Lưu ý: Khi hội viên đăng ký nhận quà từ NEW88 vui lòng nhập
+                * Lưu ý: Khi hội viên đăng ký nhận quà từ F8BET vui lòng nhập
                 đúng thông tin hiện tại.
               </p>
             </Flex>

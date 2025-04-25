@@ -33,14 +33,9 @@ export default function GroupButton() {
             className="!bg-[var(--background-color)] border-[2px] border-[#C0C0C0] !rounded-3xl !pb-0"
             classNames={{
               content: "!rounded-3xl !bg-transparent",
-              body: "mt-8",
               mask: "backdrop-blur-md",
             }}
             centered={true}
-            style={{
-              background:
-                "radial-gradient(71.52% 71.52% at 50% 100%, #44331C 0%, #101010 100%)",
-            }}
           >
             <LoginForm />
           </CompoundModal.Content>
@@ -71,14 +66,9 @@ export default function GroupButton() {
             className="!bg-[var(--background-color)] border-[2px] border-[#C0C0C0] !rounded-3xl !pb-0"
             classNames={{
               content: "!rounded-3xl !bg-transparent",
-              body: "mt-8",
               mask: "backdrop-blur-md",
             }}
             centered={true}
-            style={{
-              background:
-                "radial-gradient(71.52% 71.52% at 50% 100%, #44331C 0%, #101010 100%)",
-            }}
           >
             <SignUpForm />
           </CompoundModal.Content>

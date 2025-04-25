@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import IdolRating from "../../components/IdolRating";
 import Header from "./Header";
 import { ChatInterface } from "./Chat";
+import Marquee from "../../components/Marquee";
 
 const LivestreamDetail = ({ ...rest }) => {
   const { id } = useParams();
@@ -27,6 +28,9 @@ const LivestreamDetail = ({ ...rest }) => {
 
   return (
     <div className="max-w-screen-xl mx-auto p-4">
+      <div className="mb-4">
+        <Marquee />
+      </div>
       <Row gutter={[16, 16]}>
         <Col
           xs={{ flex: "100%" }}

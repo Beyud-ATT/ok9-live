@@ -109,9 +109,15 @@ export default function BaseFooter() {
           <Footer8 />
           <Footer9 />
           <Footer10 />
-          <Footer11 />
-          <Footer12 />
-          <Footer13 />
+          <Link to="https://f8page10.com/F8BETgiaitri" target="_blank">
+            <Footer11 />
+          </Link>
+          <Link to="https://www.facebook.com/f8betgiaitri0" target="_blank">
+            <Footer12 />
+          </Link>
+          <Link to="https://www.youtube.com/@F8BETgiaitri0" target="_blank">
+            <Footer13 />
+          </Link>
         </Flex>
 
         <Flex gap={4} align="center" justify="space-between" className="w-full">

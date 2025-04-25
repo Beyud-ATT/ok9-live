@@ -21,6 +21,7 @@ import Logo from "../../components/Logo";
 import FukadaMobile from "../../assets/fukada-mobile.webp";
 import DegeaMobile from "../../assets/degea-mobile.webp";
 import PartialBg from "../../assets/XanhVIP.webp";
+import { Link } from "react-router";
 
 const fill = "#0053E0";
 
@@ -109,13 +110,25 @@ export default function MobileFooter() {
               </p>
               <Row className="md:w-[60%] w-full">
                 <Col span={6}>
-                  <Footer11 width={20} height={20} fill={fill} />
+                  <Link to="https://f8page10.com/F8BETgiaitri" target="_blank">
+                    <Footer11 width={20} height={20} fill={fill} />
+                  </Link>
                 </Col>
                 <Col span={6}>
-                  <Footer12 width={20} height={20} fill={fill} />
+                  <Link
+                    to="https://www.facebook.com/f8betgiaitri0"
+                    target="_blank"
+                  >
+                    <Footer12 width={20} height={20} fill={fill} />
+                  </Link>
                 </Col>
                 <Col span={6}>
-                  <Footer13 width={20} height={20} fill={fill} />
+                  <Link
+                    to="https://www.youtube.com/@F8BETgiaitri0"
+                    target="_blank"
+                  >
+                    <Footer13 width={20} height={20} fill={fill} />
+                  </Link>
                 </Col>
               </Row>
             </Flex>

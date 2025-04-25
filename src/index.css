@@ -265,8 +265,13 @@
     color: var(--color-brand-primary);
   }
 
+  .ant-modal {
+    width: 1200px !important;
+  }
+
   .ant-modal .ant-modal-content {
     background-color: transparent;
+    padding: 0;
   }
 
   .ant-drawer .ant-drawer-header {

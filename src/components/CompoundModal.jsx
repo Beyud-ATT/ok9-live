@@ -41,7 +41,7 @@ function ModalContent({ children, ...rest }) {
       open={isOpen}
       onCancel={closeModal}
       footer={null}
-      closeIcon={<MdClose className="!text-white text-2xl" />}
+      closeIcon={null}
       classNames={{ content: "!bg-[var(--background-color)]" }}
       {...rest}
     >

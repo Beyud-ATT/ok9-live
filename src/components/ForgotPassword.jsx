@@ -65,7 +65,6 @@ export default function ForgotPassword() {
         className="!bg-[var(--background-color)] border-[2px] border-[#C0C0C0] !rounded-3xl !pb-0"
         classNames={{
           content: "!rounded-3xl !bg-transparent",
-          body: "mt-8",
           mask: "backdrop-blur-md",
         }}
         centered={true}

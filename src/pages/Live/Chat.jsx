@@ -12,8 +12,6 @@ import useAddBannedChat from "../../hooks/useAddBannedChat";
 import moment from "moment/moment";
 import useMobileKeyboardOpen from "../../hooks/useMobileKeyboardOpen";
 import useScrollDirection from "../../hooks/useScrollDirection";
-import { Button } from "antd";
-import { Hono } from "../../utils/svg";
 import useGetGeneralLinks from "../../hooks/useGetGeneralLinks";
 import { chatHeightSetting } from "../../utils/constant";
 
@@ -251,7 +249,7 @@ function ChatFrame({ ...rest }) {
 
   return (
     <div
-      className={`text-white flex flex-col p-2 ${chatHeightSetting} overflow-auto ${
+      className={`text-black flex flex-col p-2 ${chatHeightSetting} overflow-auto ${
         isMobileKeyboardOpen ? "h-[25dvh]" : "h-[40dvh]"
       }`}
     >
@@ -295,7 +293,7 @@ function ChatFrame({ ...rest }) {
                       <span>:</span>
                     </div>
                     <div
-                      className={`text-gray-300 text-xs leading-relaxed ${
+                      className={`text-black text-xs leading-relaxed ${
                         isSpecial
                           ? "!text-[var(--color-brand-primary-lighter)] font-semibold"
                           : ""
@@ -304,7 +302,7 @@ function ChatFrame({ ...rest }) {
                       {parse(comment.message)}
                     </div>
                   </div>
-                  <div className="text-gray-400 cursor-pointer">
+                  <div className="text-black cursor-pointer">
                     {comment.userId !== curretUserId && !isSpecial && (
                       <FaRegEyeSlash
                         onClick={() => {
@@ -410,7 +408,7 @@ function BareChatFrame() {
                   <span>:</span>
                 </div>
                 <div
-                  className={`text-gray-300 leading-relaxed ${
+                  className={`text-black leading-relaxed ${
                     isSpecial
                       ? "!text-[var(--color-brand-primary-lighter)] font-semibold"
                       : ""

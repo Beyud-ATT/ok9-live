@@ -132,11 +132,11 @@ export default function IdolRating() {
   const { data } = useLiveDetail(id);
   const liveData = data?.data?.data;
 
-  useEffect(() => {
-    if (liveData?.isLastRate) {
-      triggerRef.current.click();
-    }
-  }, [liveData]);
+  // useEffect(() => {
+  //   if (liveData?.isLastRate) {
+  //     triggerRef.current.click();
+  //   }
+  // }, [liveData]);
 
   return (
     <CompoundModal>

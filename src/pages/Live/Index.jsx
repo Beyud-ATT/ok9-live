@@ -14,6 +14,7 @@ import Header from "./Header";
 import { ChatInterface } from "./Chat";
 import Marquee from "../../components/Marquee";
 import PromoGIF from "../../components/PromoGIF";
+import PromoHot from "../../components/PromoHot";
 
 const LivestreamDetail = ({ ...rest }) => {
   const { id } = useParams();
@@ -84,8 +85,11 @@ const LivestreamDetail = ({ ...rest }) => {
       <div>
         <IdolRating />
       </div>
-      <div className="mt-8">
+      <div className="lg:mt-8 mt-4">
         <NewsTab />
+      </div>
+      <div className="lg:mt-8 mt-4">
+        <PromoHot />
       </div>
     </div>
   );

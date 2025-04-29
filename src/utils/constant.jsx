@@ -16,9 +16,9 @@ import TV from "../assets/tv.png";
 import Ref from "../assets/ref.png";
 import { Flex } from "antd";
 import { FaCheck } from "react-icons/fa";
-import { Feedback1, Feedback2, Feedback3, Feedback4, Feedback5 } from "./svg";
+// import { Feedback1, Feedback2, Feedback3, Feedback4, Feedback5 } from "./svg";
 
-const optionLabelStyle = "text-[15px] text-black font-semibold";
+const optionLabelStyle = "text-[15px] font-semibold";
 
 const UserType = {
   USER: "1",
@@ -506,7 +506,7 @@ const FEEDBACK_TYPE = {
     value: 1,
     label: (
       <Flex align="center" gap={5}>
-        <Feedback1 />
+        {/* <Feedback1 /> */}
         <span className={optionLabelStyle}>Phản hồi về idol</span>
       </Flex>
     ),
@@ -515,7 +515,7 @@ const FEEDBACK_TYPE = {
     value: 2,
     label: (
       <Flex align="center" gap={5}>
-        <Feedback2 />
+        {/* <Feedback2 /> */}
         <span className={optionLabelStyle}>Phản hồi về sản phẩm quà tặng</span>
       </Flex>
     ),
@@ -524,7 +524,7 @@ const FEEDBACK_TYPE = {
     value: 3,
     label: (
       <Flex align="center" gap={5}>
-        <Feedback3 />
+        {/* <Feedback3 /> */}
         <span className={optionLabelStyle}> Phản hồi về chất lượng live</span>
       </Flex>
     ),
@@ -533,7 +533,7 @@ const FEEDBACK_TYPE = {
     value: 4,
     label: (
       <Flex align="center" gap={5}>
-        <Feedback4 />
+        {/* <Feedback4 /> */}
         <span className={optionLabelStyle}>Tâm sự cùng F8BET</span>
       </Flex>
     ),
@@ -542,7 +542,7 @@ const FEEDBACK_TYPE = {
     value: 5,
     label: (
       <Flex align="center" gap={5}>
-        <Feedback5 />
+        {/* <Feedback5 /> */}
         <span className={optionLabelStyle}>Đề xuất, góp ý</span>
       </Flex>
     ),

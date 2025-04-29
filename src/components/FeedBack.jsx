@@ -89,7 +89,7 @@ export default function FeedBack() {
       </Flex>
 
       <Flex align="center" className="mb-6">
-        <div className="w-[50%]">
+        <div className="lg:w-[50%] lg:block hidden">
           <Image
             src={Feedback}
             alt="Feedback"
@@ -98,7 +98,7 @@ export default function FeedBack() {
           />
         </div>
         <div
-          className="w-[50%] p-5"
+          className="lg:w-[50%] w-full p-5"
           style={{
             borderRadius: "20.126px",
             border: "1.677px solid #FFF",

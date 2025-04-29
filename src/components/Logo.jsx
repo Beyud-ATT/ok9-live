@@ -1,6 +1,6 @@
 import { Image } from "antd";
-import LogoImg from "../assets/logo.webp";
-import LogoMBImg from "../assets/mobile-logo.webp";
+import LogoImg from "../assets/logo.png";
+import LogoMBImg from "../assets/mobile-logo.png";
 import { screenType, useDevice } from "../contexts/ResponsiveContext";
 
 export default function Logo({ forcePC, ...rest }) {
@@ -14,8 +14,8 @@ export default function Logo({ forcePC, ...rest }) {
         alt="logo"
         loading="lazy"
         preview={false}
-        width={isMobile ? 111 : 160}
-        height={isMobile ? 32 : 62}
+        width={isMobile ? 115 : 193}
+        height={isMobile ? 46 : 80}
         {...rest}
       />
     </>

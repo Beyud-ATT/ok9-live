@@ -6,8 +6,7 @@ import Slide2 from "../assets/slide2.webp";
 import Left from "../assets/left.webp";
 import Right from "../assets/right.webp";
 
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/bundle";
 
 export default function PromoHot() {
   const slides = [
@@ -29,7 +28,7 @@ export default function PromoHot() {
   ];
 
   return (
-    <div className="mx-auto container max-[425px]:max-w-[425px] px-4">
+    <div className="mx-auto container max-[425px]:max-w-[calc(100vw-24px)] max-[375px]:max-w-[calc(100vw-24px)] max-[320px]:max-w-[calc(100vw-24px)] px-1">
       <Flex
         justify="space-between"
         align="center"
@@ -65,7 +64,7 @@ export default function PromoHot() {
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={24}
-          slidesPerView={"auto"}
+          slidesPerView={1}
           breakpoints={{
             320: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -86,17 +85,19 @@ export default function PromoHot() {
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className="relative rounded-xl overflow-hidden bg-gray-100">
-                <img
+                <Image
                   src={slide.imageUrl}
                   alt={slide.title}
                   className="w-full h-auto object-cover"
+                  preview={false}
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <div className="custom-pagination flex justify-center items-center mt-[1rem]"></div>
+        <div className="custom-pagination flex justify-center items-center mt-4"></div>
       </div>
     </div>
   );

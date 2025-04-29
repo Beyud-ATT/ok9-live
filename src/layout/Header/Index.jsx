@@ -19,7 +19,7 @@ export default function BaseHeader({ ...rest }) {
         className="max-w-[1200px] mx-auto md:py-2 py-4 lg:px-8 px-4"
       >
         <DeviceProvider.MOBILE>
-          <Flex align="center">
+          <Flex align="center" gap={5}>
             <BurgerTopNav />
             <Link to="/">
               <Logo />

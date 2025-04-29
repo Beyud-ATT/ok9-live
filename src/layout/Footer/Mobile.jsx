@@ -157,7 +157,7 @@ export default function MobileFooter() {
       >
         <div className="px-6 mb-4">
           <Typography.Title level={4} className=" text-center pt-6 !font-bold ">
-            <Logo width={128} height={60} />
+            <Logo forcePC width={128} height={61} />
           </Typography.Title>
           <p className="text-justify text-[#0053E0]">
             F8BET là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do

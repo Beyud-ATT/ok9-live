@@ -15,6 +15,7 @@ import { ChatInterface } from "./Chat";
 import Marquee from "../../components/Marquee";
 import PromoGIF from "../../components/PromoGIF";
 import PromoHot from "../../components/PromoHot";
+import FeedBack from "../../components/FeedBack";
 
 const LivestreamDetail = ({ ...rest }) => {
   const { id } = useParams();
@@ -90,6 +91,9 @@ const LivestreamDetail = ({ ...rest }) => {
       </div>
       <div className="lg:mt-8 mt-4">
         <PromoHot />
+      </div>
+      <div className="lg:mt-8 mt-4">
+        <FeedBack />
       </div>
     </div>
   );

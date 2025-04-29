@@ -28,7 +28,7 @@ export default function PromoHot() {
   ];
 
   return (
-    <div className="mx-auto container max-[425px]:max-w-[calc(100vw-24px)] max-[375px]:max-w-[calc(100vw-24px)] max-[320px]:max-w-[calc(100vw-24px)] px-1">
+    <div className="mx-auto container max-[425px]:max-w-[calc(100vw-36px)] px-1">
       <Flex
         justify="space-between"
         align="center"

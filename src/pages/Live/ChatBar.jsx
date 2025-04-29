@@ -232,7 +232,10 @@ export default function ChatBar() {
         ) : (
           <div className="w-full py-2">
             <Flex vertical justify="center" align="center" gap={4}>
-              <Typography.Title level={5} className="!text-white">
+              <Typography.Title
+                level={5}
+                className="!text-[var(--color-brand-primary)]"
+              >
                 Nhớ 8 với những người xem chung nhé!
               </Typography.Title>
               <Typography.Text>

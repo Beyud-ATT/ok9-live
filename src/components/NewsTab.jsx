@@ -78,7 +78,7 @@ function NewsTab() {
           return (
             <>
               <Flex key={index} className="gap-5">
-                <div className="md:w-[30%] w-[50%]">
+                <div className="w-[50%]">
                   <Image
                     src={news?.image}
                     preview={false}
@@ -86,7 +86,7 @@ function NewsTab() {
                     className="xl:!w-[331px] xl:!h-[221px] lg:!w-[300px] lg:!h-[200px] !w-[190px] !h-[110px]  border border-[#1F79FF] rounded-2xl"
                   />
                 </div>
-                <div className="md:w-[70%] w-[50%]">
+                <div className="w-[50%]">
                   <h3
                     className={`mb-1 text-[var(--color-brand-primary)] xl:text-[24px] lg:text-[18px] text-[14px] font-semibold`}
                   >

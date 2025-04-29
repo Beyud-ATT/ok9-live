@@ -205,7 +205,7 @@ export default function ChatBar() {
                 hover:border-[var(--color-brand-primary)] 
                 focus:shadow-none
                 px-3 py-1.5 
-                text-white
+                text-black
                 placeholder-gray-400
                 `}
               classNames={{

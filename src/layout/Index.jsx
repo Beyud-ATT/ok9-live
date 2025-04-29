@@ -41,8 +41,8 @@ function BaseLayout() {
           >
             <Outlet />
           </BaseContent>
-          {!isGiftPage && !isUserPage && !isLiveMobilePage && <BaseFooter />}
-          {isShowMobile && <MobileFooter />}
+          {/* {!isGiftPage && !isUserPage && !isLiveMobilePage && <BaseFooter />}
+          {isShowMobile && <MobileFooter />} */}
         </Layout>
       </Flex>
     </LayoutContext.Provider>

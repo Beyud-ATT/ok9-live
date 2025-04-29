@@ -1,4 +1,5 @@
 // import IdolHot from "../../components/IdolTop";
+import FeedBack from "../../components/FeedBack";
 import Marquee from "../../components/Marquee";
 import NewsTab from "../../components/NewsTab";
 import PromoGIF from "../../components/PromoGIF";
@@ -41,6 +42,9 @@ export default function Home() {
       </div>
       <div className="lg:mt-8 mt-4">
         <PromoHot />
+      </div>
+      <div className="lg:mt-8 mt-4">
+        <FeedBack />
       </div>
     </div>
   );

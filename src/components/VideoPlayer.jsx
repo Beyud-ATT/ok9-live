@@ -29,6 +29,7 @@ import DefaultBanner from "../assets/default-banner.webp";
 const LivestreamPlayer = ({ liveId }) => {
   const pathname = useLocation().pathname;
   const isLivePage = pathname.includes("/live/");
+  const isLiveMobilePage = pathname.includes("/live-mobile");
   const navigate = useNavigate();
 
   const videoRef = useRef(null);
@@ -43,7 +44,7 @@ const LivestreamPlayer = ({ liveId }) => {
   const videoLiveHeightSetting = `${
     isFullscreen
       ? "!h-full"
-      : isLivePage
+      : isLivePage || isLiveMobilePage
       ? videoHeightSettingInRoom
       : videoHeightSettingInHome
   }`;

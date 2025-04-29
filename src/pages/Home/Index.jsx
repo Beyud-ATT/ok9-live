@@ -1,20 +1,25 @@
 // import IdolHot from "../../components/IdolTop";
 import Marquee from "../../components/Marquee";
 import NewsTab from "../../components/NewsTab";
+import PromoGIF from "../../components/PromoGIF";
+import PromoHot from "../../components/PromoHot";
 // import OnlineTable from "../../components/OnlineTable";
-import PromotionSlider from "../../components/PromotionSlide";
+// import PromotionSlider from "../../components/PromotionSlide";
 // import TopInteraction from "../../components/TopInteraction";
-import BannerSection from "./BannerSection";
+// import BannerSection from "./BannerSection";
 import LiveSection from "./LiveSection";
 
 export default function Home() {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-[1200px] mx-auto">
       {/* <div>
         <BannerSection />
       </div> */}
       <div>
         <Marquee />
+      </div>
+      <div>
+        <PromoGIF />
       </div>
       <div>
         <LiveSection />
@@ -31,8 +36,11 @@ export default function Home() {
       {/* <div>
         <IdolHot />
       </div> */}
-      <div className="mt-8">
+      <div className="lg:mt-8 mt-4">
         <NewsTab />
+      </div>
+      <div className="lg:mt-8 mt-4">
+        <PromoHot />
       </div>
     </div>
   );

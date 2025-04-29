@@ -16,21 +16,29 @@ export default function BaseHeader({ ...rest }) {
       <Flex
         justify="space-between"
         align="center"
-        className="max-w-screen-xl mx-auto py-2 lg:px-8 px-4"
+        className="max-w-[1200px] mx-auto md:py-2 py-4 lg:px-8 px-4"
       >
         <DeviceProvider.MOBILE>
-          <BurgerTopNav />
+          <Flex align="center">
+            <BurgerTopNav />
+            <Link to="/">
+              <Logo />
+            </Link>
+          </Flex>
         </DeviceProvider.MOBILE>
-        <Link to="/">
-          <Logo />
-        </Link>
 
         <DeviceProvider.PC>
+          <Link to="/">
+            <Logo />
+          </Link>
           <TopNav />
           <UserActionDropdown />
         </DeviceProvider.PC>
 
         <DeviceProvider.TABLET>
+          <Link to="/">
+            <Logo />
+          </Link>
           <TopNav />
           <UserActionDrawer />
         </DeviceProvider.TABLET>

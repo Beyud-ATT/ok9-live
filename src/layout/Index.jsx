@@ -17,7 +17,7 @@ function BaseLayout() {
   const isGiftPage = useLocation().pathname.includes("gift");
   const isShow = !isUserPage && !isLiveMobilePage && !isLivePage;
 
-  const isShowMobile = useDevice().deviceType === screenType.MOBILE || isShow;
+  const isShowMobile = useDevice().deviceType === screenType.MOBILE && isShow;
 
   return (
     <LayoutContext.Provider value={{ Header, Footer, Sider, Content }}>
@@ -36,7 +36,7 @@ function BaseLayout() {
           />
           <BaseContent
             className={`${
-              isShow && !isGiftPage ? "lg:px-8 px-4 pt-4" : ""
+              isShow && !isGiftPage ? "lg:px-8 px-4 lg:pt-4 pt-0" : ""
             } overflow-y-auto`}
           >
             <Outlet />

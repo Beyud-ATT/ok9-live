@@ -92,7 +92,7 @@ export default function FeedBack() {
         </p>
       </Form.Item>
 
-      <Flex vertical className="max-w-screen-lg mx-auto">
+      <Flex vertical className="max-w-[1200px] mx-auto">
         <Form.Item>
           <Upload
             key={uploadKey}

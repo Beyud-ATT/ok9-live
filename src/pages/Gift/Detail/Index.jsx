@@ -13,7 +13,7 @@ export default function GiftDetail() {
   const images = Array.from({ length: 4 }).map(() => gift.image);
 
   return (
-    <div className="max-w-screen-xl mx-auto mt-5 px-4">
+    <div className="max-w-[1200px] mx-auto mt-5 px-4">
       <Flex justify="center" className="md:flex-row flex-col">
         <Flex justify="start" className="lg:w-[40%] md:w-[50%] w-full">
           <Flex vertical justify="center">

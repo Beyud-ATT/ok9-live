@@ -7,6 +7,8 @@ export default {
     extend: {},
     fontFamily: {
       times: ["Times", ...fontFamily.sans],
+      utm: ["UTM Avo", ...fontFamily.sans],
+      utmBold: ["UTM AvoBold", ...fontFamily.sans],
     },
   },
   plugins: [],

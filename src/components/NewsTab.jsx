@@ -55,7 +55,7 @@ function NewsTab() {
         />
         <Typography.Title
           level={3}
-          className="lg:!text-5xl md:!text-2xl !font-bold !mb-0"
+          className="lg:!text-4xl md:!text-2xl !font-bold font-utmBold !mb-0"
           style={{
             background:
               "linear-gradient(180deg, #359EFF 48.35%, #1F79FF 81.94%)",

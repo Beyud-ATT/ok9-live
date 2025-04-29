@@ -28,7 +28,9 @@ import Description from "./Description";
 const Ambassadors = [
   {
     img: Degea,
-    signature: <Image src={DegeaSignature} alt="degea-signature" />,
+    signature: (
+      <Image src={DegeaSignature} alt="degea-signature" preview={false} />
+    ),
     text: (
       <>
         <p>David de gea</p>
@@ -38,7 +40,9 @@ const Ambassadors = [
   },
   {
     img: Fukada,
-    signature: <Image src={FukadaSignature} alt="fukada-signature" />,
+    signature: (
+      <Image src={FukadaSignature} alt="fukada-signature" preview={false} />
+    ),
     text: (
       <>
         <p>Eimi Fukada</p>
@@ -71,7 +75,7 @@ export default function BaseFooter() {
         vertical
         justify="center"
         align="center"
-        className="max-w-screen-xl mx-auto mt-6 text-[var(--text-color)] px-4 mb-6"
+        className="max-w-[1200px] mx-auto mt-6 text-[var(--text-color)] px-4 mb-6"
         gap={26}
       >
         <div className="w-full flex gap-10 items-center">

@@ -1,6 +1,5 @@
 import { Modal } from "antd";
 import { createContext, useContext, useState } from "react";
-import { MdClose } from "react-icons/md";
 import { useCallback } from "react";
 
 const ModalContext = createContext();
@@ -41,7 +40,7 @@ function ModalContent({ children, ...rest }) {
       open={isOpen}
       onCancel={closeModal}
       footer={null}
-      closeIcon={null}
+      closeIcon={false}
       classNames={{ content: "!bg-[var(--background-color)]" }}
       {...rest}
     >

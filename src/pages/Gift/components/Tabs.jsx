@@ -21,7 +21,7 @@ export default function Tabs() {
   const [currentTab, setCurrentTab] = useState(0);
 
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-[1200px]] mx-auto">
       <Flex justify="center" align="center" className="my-5">
         {tabs.map((tab, index) => (
           <button

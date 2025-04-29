@@ -59,6 +59,16 @@
   src: url("/src/fonts/Times_New_Roman.ttf");
 }
 
+@font-face {
+  font-family: "UTM Avo";
+  src: url("/src/fonts/UTM_Avo.ttf");
+}
+
+@font-face {
+  font-family: "UTM AvoBold";
+  src: url("/src/fonts/UTM_AvoBold.ttf");
+}
+
 :root {
   --background-color: #f0f6ff;
   --background-color-2: #e8f5fe;
@@ -284,6 +294,43 @@
 
   .ant-menu-light.ant-menu-root.ant-menu-inline {
     border: none;
+  }
+
+  .custom-pagination .swiper-pagination-bullet {
+    width: 50px;
+    height: 8px;
+    border-radius: 44px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    background: radial-gradient(
+        76.16% 76.16% at 31.97% 19.67%,
+        #fff 0%,
+        rgba(255, 255, 255, 0) 69.79%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #a2a2a2;
+    box-shadow: 0px -3px 8px 0px rgba(255, 255, 255, 0.25) inset,
+      6px 9px 9px 0px rgba(255, 255, 255, 0.6) inset,
+      0px 2px 2px 0px rgba(255, 255, 255, 0.6) inset,
+      -10px -12px 18px 0px rgba(91, 216, 255, 0.1) inset,
+      3px 4px 8px 0px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+  }
+
+  .custom-pagination .swiper-pagination-bullet-active {
+    border-radius: 109px;
+    background: radial-gradient(
+        107.08% 85.59% at 86.3% 87.5%,
+        rgba(0, 0, 0, 0.23) 0%,
+        rgba(0, 0, 0, 0) 86.18%
+      ),
+      radial-gradient(
+        83.94% 83.94% at 26.39% 20.83%,
+        rgba(255, 255, 255, 0.41) 0%,
+        rgba(255, 255, 255, 0) 69.79%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #2f6eff;
+    box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset;
   }
 
   @media (max-width: 425px) {

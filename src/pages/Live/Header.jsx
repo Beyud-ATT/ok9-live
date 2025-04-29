@@ -40,7 +40,7 @@ export default function Header() {
           <div className="flex flex-col">
             <Typography.Title
               level={3}
-              className="!text-white !font-bold xl:!text-[.8rem] !text-[.4rem] !m-0"
+              className="!text-white !font-bold xl:!text-[.8rem] !text-[.7rem] !m-0"
             >
               {liveDetailData?.displayName}
             </Typography.Title>

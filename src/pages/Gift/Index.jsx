@@ -95,7 +95,7 @@ function Testimonial() {
 
 function GiftList() {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-[1200px] mx-auto">
       <div className="md:mt-[27px] mt-[15px] grid md:grid-cols-4 grid-cols-2 gap-4">
         {GIFTS.map((gift, index) => (
           <GiftItem

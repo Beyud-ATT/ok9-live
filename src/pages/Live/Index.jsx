@@ -13,6 +13,7 @@ import IdolRating from "../../components/IdolRating";
 import Header from "./Header";
 import { ChatInterface } from "./Chat";
 import Marquee from "../../components/Marquee";
+import PromoGIF from "../../components/PromoGIF";
 
 const LivestreamDetail = ({ ...rest }) => {
   const { id } = useParams();
@@ -27,9 +28,12 @@ const LivestreamDetail = ({ ...rest }) => {
   }, [isMobile, id, navigate]);
 
   return (
-    <div className="max-w-screen-xl mx-auto p-4">
+    <div className="max-w-[1200px] mx-auto p-4">
       <div className="mb-4">
         <Marquee />
+      </div>
+      <div>
+        <PromoGIF />
       </div>
       <Row gutter={[16, 16]}>
         <Col

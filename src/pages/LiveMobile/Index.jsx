@@ -9,9 +9,8 @@ import { IoCloseSharp } from "react-icons/io5";
 import Countdown from "../../components/CountDown";
 import { FaShare } from "react-icons/fa";
 // import LiveTabs from "../Live/LiveTabs";
-import IdolRating from "../../components/IdolRating";
 import LivestreamPlayer from "../../components/VideoPlayer";
-import { ChatInterface } from "../Live/Chat";
+import AdaptiveChatBar from "./AdaptiveChatBar";
 
 const ViewerCount = ({ liveDetailData }) => {
   const { viewer } = useSignalR();
@@ -119,7 +118,7 @@ export default function LiveMobile() {
             >
               bình luận
             </div>
-            <ChatInterface />
+            <AdaptiveChatBar />
           </div>
         </div>
       </div>

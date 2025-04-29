@@ -397,6 +397,7 @@ const LivestreamPlayer = ({ liveId }) => {
           className={`object-contain w-full ${videoLiveHeightSetting}`}
           playsInline
           muted={isMuted}
+          loop
         />
 
         {needsInteraction && !isLiveDetailLoading && (

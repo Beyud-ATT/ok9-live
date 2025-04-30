@@ -32,7 +32,7 @@ export default function PromoHot() {
       <Flex
         justify="space-between"
         align="center"
-        className="lg:mb-7 md:mb-5 mb-3"
+        className="lg:mb-7 md:mb-5 mb-3 pt-2"
       >
         <Image
           src={Left}
@@ -49,6 +49,8 @@ export default function PromoHot() {
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
+            paddingTop: "0.15em", // Add some padding at the top
+            lineHeight: 1.3, // Increase line height
           }}
         >
           khuyến mãi

@@ -69,7 +69,7 @@ export default function FeedBack() {
         />
         <Typography.Title
           level={3}
-          className="lg:!text-4xl md:!text-2xl !font-bold font-utmBold !mb-0 uppercase"
+          className="lg:!text-4xl md:!text-2xl !font-bold font-utmBold !mb-0 uppercase whitespace-nowrap"
           style={{
             background:
               "linear-gradient(180deg, #359EFF 48.35%, #1F79FF 81.94%)",

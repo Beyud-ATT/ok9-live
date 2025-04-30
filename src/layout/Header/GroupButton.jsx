@@ -31,7 +31,7 @@ export default function GroupButton() {
             )}
           />
           <CompoundModal.Content
-            className="!bg-[var(--background-color)] border-[2px] border-[#C0C0C0] !rounded-3xl !pb-0"
+            className="login-modal !bg-[var(--background-color)] border-[2px] border-[#C0C0C0] !rounded-3xl !pb-0"
             classNames={{
               content: "!rounded-3xl !bg-transparent",
               mask: "backdrop-blur-md",
@@ -61,7 +61,7 @@ export default function GroupButton() {
             )}
           />
           <CompoundModal.Content
-            className="!bg-[var(--background-color)] border-[2px] border-[#C0C0C0] !rounded-3xl !pb-0"
+            className="signup-modal !bg-[var(--background-color)] border-[2px] border-[#C0C0C0] !rounded-3xl !pb-0"
             classNames={{
               content: "!rounded-3xl !bg-transparent",
               mask: "backdrop-blur-md",

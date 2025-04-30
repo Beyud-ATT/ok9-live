@@ -300,7 +300,8 @@
     color: var(--color-brand-primary);
   }
 
-  .ant-modal {
+  .ant-modal.login-modal,
+  .ant-modal.signup-modal {
     width: 1200px !important;
   }
 

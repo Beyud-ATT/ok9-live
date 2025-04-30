@@ -106,11 +106,7 @@ function NewsTab() {
                 }`}
               />
               <h3
-                className={`mb-1 font-semibold ${
-                  activeTab === tab.id
-                    ? "text-[var(--color-brand-primary)]"
-                    : "text-[#8B8B8B]"
-                } xl:text-[20px] lg:text-[18px] text-[14px]`}
+                className={`mb-1 font-semibold text-[var(--color-brand-primary)] xl:text-[20px] lg:text-[18px] text-[14px]`}
               >
                 {parse(tab.content)}
               </h3>

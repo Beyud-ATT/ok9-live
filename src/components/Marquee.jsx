@@ -2,6 +2,7 @@ import ReactFastMarquee from "react-fast-marquee";
 import Speaker from "../assets/speaker.webp";
 import { Flex, Image } from "antd";
 import { screenType, useDevice } from "../contexts/ResponsiveContext";
+import { Link } from "react-router";
 
 export default function Marquee() {
   const { deviceType } = useDevice();
@@ -36,10 +37,15 @@ export default function Marquee() {
           </Flex>
           <ReactFastMarquee className="text-black overflow-hidden">
             <span className="md:text-[16px]">
-              💥💥CHÀO MỪNG SINH NHẬT F8BET. Bùng nổ seri khuyến mãi siêu khủng
-              từ ngày 03/10 đến 17/10 nhân dịp sự kiện đặt biệt này. Nhanh tay
-              đăng nhập để tham gia và nhận hàng ngàn phần thưởng cực hot
-              nhé!🎁🎁
+              📢Nhân dịp 30/4 - Ngày Giải phóng miền Nam, thống nhất đất nước,
+              F8BET xin kính chúc mọi người một ngày lễ thật ý nghĩa, luôn ghi
+              nhớ và tự hào về truyền thống hào hùng của dân tộc, cùng nhau vun
+              đắp một Việt Nam hòa bình, thịnh vượng và trường tồn! 🎁 ĐÓN ĐẠI
+              LỄ - RINH LÌ XÌ - 30/04 PHÁT THƯỞNG THÀNH CÔNG 1.000 TỶ ĐỒNG.🎁 🔗
+              Link mới nhất:{" "}
+              <Link to="https://f8beta2.com/" target="_blank">
+                https://f8beta2.com
+              </Link>{" "}
             </span>
           </ReactFastMarquee>
         </Flex>

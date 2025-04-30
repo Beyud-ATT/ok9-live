@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { getMe } from "../services/accountAPI";
 
 export default function useAccount() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, logout } = useAuth();
 
   const { data, isLoading, error, isError } = useQuery({
     queryKey: ["account", isAuthenticated],
@@ -13,6 +13,10 @@ export default function useAccount() {
   });
 
   if (isError) {
+    if (error.status === 401) {
+      logout();
+      return;
+    }
     toast.error(error.response.data.message);
   }
 

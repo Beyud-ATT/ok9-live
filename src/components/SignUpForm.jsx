@@ -24,7 +24,10 @@ export default function SignUpForm() {
 
   const onFinish = async (values) => {
     try {
-      await signup(values);
+      await signup({
+        ...values,
+        username: values.username.trim().toLowerCase(),
+      });
       closeModal();
       form.resetFields();
     } catch (error) {

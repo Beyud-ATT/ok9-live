@@ -23,7 +23,10 @@ export default function LoginForm() {
 
   const onFinish = async (values) => {
     try {
-      const res = await login(values);
+      const res = await login({
+        ...values,
+        username: values.username.trim().toLowerCase(),
+      });
       if (res?.status === 200) {
         closeModal();
       }

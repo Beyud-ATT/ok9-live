@@ -92,12 +92,12 @@ function PinnedMessage() {
   return (
     messages?.length > 0 && (
       <div
-        className="rounded-lg mb-3 cursor-pointer bg-[var(--table-border-color)]"
+        className="rounded-lg mb-3 cursor-pointer bg-[var(--color-brand-primary-lighter)]"
         onClick={handleMessageClick}
       >
         <div className="px-4 md:py-3 py-1">
           <div className="flex items-center justify-between gap-3">
-            <div className="flex items-center justify-center text-[var(--color-brand-primary-lighter)] font-semibold gap-3 overflow-hidden min-w-0">
+            <div className="flex items-center justify-center text-white font-semibold gap-3 overflow-hidden min-w-0">
               <span className="flex-shrink-0">{currentMessageIndex + 1}. </span>
               <div className="overflow-hidden">
                 <ShowMore message={messages[currentMessageIndex]} show={show} />
@@ -107,14 +107,14 @@ function PinnedMessage() {
               {show ? (
                 <button type="button" className="m-1 cursor-pointer">
                   <IoMdArrowDropup
-                    className="text-[var(--color-brand-primary-lighter)] text-2xl cursor-pointer"
+                    className="text-white text-2xl cursor-pointer"
                     onClick={toggleShow}
                   />
                 </button>
               ) : (
                 <button type="button" className="m-1 cursor-pointer">
                   <IoMdArrowDropdown
-                    className="text-[var(--color-brand-primary-lighter)] text-2xl cursor-pointer"
+                    className="text-white text-2xl cursor-pointer"
                     onClick={toggleShow}
                   />
                 </button>
@@ -249,23 +249,11 @@ function ChatFrame({ ...rest }) {
 
   return (
     <div
-      className={`text-black flex flex-col p-2 ${chatHeightSetting} overflow-auto ${
+      className={`text-black flex flex-col px-2 ${chatHeightSetting} overflow-auto ${
         isMobileKeyboardOpen ? "h-[25dvh]" : "h-[40dvh]"
       }`}
     >
-      {/* {!isMobileKeyboardOpen && (
-        <>
-          <Link to={linkCode} target="_blank" className="w-full">
-            <Button
-              variant="solid"
-              className="w-full bg-[var(--color-brand-primary)] hover:!bg-orange-500 border-none cursor-pointer text-white hover:!text-gray-100 px-4 py-2 rounded-lg font-bold"
-            >
-              <Hono /> Nhập Code
-            </Button>
-          </Link>
-          <WarningAndPinnedComment />
-        </>
-      )} */}
+      {!isMobileKeyboardOpen && <WarningAndPinnedComment />}
 
       <div ref={commentsContainerRef} className="overflow-y-auto">
         <div className="p-2 space-y-3">

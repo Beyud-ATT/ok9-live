@@ -98,7 +98,7 @@ function NewsTab() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`w-full text-left md:p-4 p-2 relative font-times text-justify`}
+              className={`w-full md:p-4 p-2 relative font-times text-justify`}
             >
               <div
                 className={`absolute left-0 top-0 bottom-0 w-1 transition-opacity duration-200 ${

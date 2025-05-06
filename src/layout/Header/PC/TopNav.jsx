@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router";
 import useGetGeneralLinks from "../../../hooks/useGetGeneralLinks";
 
 const TopNav = ({ props }) => {
+  const menuItemStyle = "font-semibold text-xl";
   const { generalLinks } = useGetGeneralLinks();
   const { linkWeb, linkApp, linkCode } = generalLinks?.data?.data || {};
 
@@ -23,11 +24,16 @@ const TopNav = ({ props }) => {
   const items = useMemo(
     () => [
       {
-        label: <Link to="https://f8beta2.com">Trang chủ</Link>,
+        label: "Trang chủ",
         key: "home",
         render: (props) => {
           return (
-            <Link to="https://f8beta2.com" {...props}>
+            <Link
+              to={linkWeb}
+              {...props}
+              className={menuItemStyle}
+              target="_blank"
+            >
               Trang chủ
             </Link>
           );
@@ -84,20 +90,21 @@ const TopNav = ({ props }) => {
       //   ),
       // },
       {
-        label: (
-          <Link to="https://f8page10.com/CODE" target="_blank">
-            Nhập Code
-          </Link>
-        ),
+        label: "Nhập Code",
         key: "code",
         render: (props) => (
-          <Link to="https://f8page10.com/CODE" target="_blank" {...props}>
+          <Link
+            to={linkCode}
+            target="_blank"
+            {...props}
+            className={menuItemStyle}
+          >
             Nhập Code
           </Link>
         ),
       },
     ],
-    [linkApp, linkWeb]
+    [linkCode, linkWeb]
   );
 
   useEffect(() => {

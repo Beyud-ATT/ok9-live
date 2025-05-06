@@ -25,7 +25,7 @@ const UserType = {
   IDOL: "2",
 };
 
-const chatHeightSetting = `xl:h-[475px] lg:h-[380px] md:h-[285px]`;
+const chatHeightSetting = `xl:h-[392px] lg:h-[296px] md:h-[201px]`;
 
 const videoHeightSettingInRoom = `xl:h-[455px] lg:h-[360px] md:h-[265px] h-[230px]`;
 const videoHeightSettingInHome = `xl:h-[540px] lg:h-[430px] md:h-[330px] h-[220px]`;

@@ -7,7 +7,9 @@ import { Link } from "react-router";
 import useGetGeneralLinks from "../../../hooks/useGetGeneralLinks";
 
 export default function BurgerTopNav() {
+  const menuItemStyle = "font-semibold text-base";
   const { generalLinks } = useGetGeneralLinks();
+  const { linkWeb, linkApp, linkCode } = generalLinks?.data?.data || {};
 
   const [isOpen, setIsOpen] = useState(false);
   const [current, setCurrent] = useState("home");
@@ -15,11 +17,11 @@ export default function BurgerTopNav() {
   const items = useMemo(
     () => [
       {
-        label: <Link to="https://f8beta2.com">Trang chủ</Link>,
+        label: "Trang chủ",
         key: "home",
         render: (props) => {
           return (
-            <Link to="https://f8beta2.com" {...props}>
+            <Link to="https://f8beta2.com" {...props} className={menuItemStyle}>
               Trang chủ
             </Link>
           );
@@ -63,14 +65,15 @@ export default function BurgerTopNav() {
       //   ),
       // },
       {
-        label: (
-          <Link to="https://f8page10.com/CODE" target="_blank">
-            Nhập Code
-          </Link>
-        ),
+        label: "Nhập Code",
         key: "download",
         render: (props) => (
-          <Link to="https://f8page10.com/CODE" target="_blank" {...props}>
+          <Link
+            to="https://f8page10.com/CODE"
+            target="_blank"
+            {...props}
+            className={menuItemStyle}
+          >
             Nhập Code
           </Link>
         ),

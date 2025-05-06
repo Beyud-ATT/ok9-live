@@ -9,13 +9,13 @@ import { useNavigate, useParams } from "react-router";
 import { screenType, useDevice } from "../../contexts/ResponsiveContext";
 import { useEffect } from "react";
 // import LiveTabs from "./LiveTabs";
-import IdolRating from "../../components/IdolRating";
+// import IdolRating from "../../components/IdolRating";
 import Header from "./Header";
 import { ChatInterface } from "./Chat";
 import Marquee from "../../components/Marquee";
-import PromoGIF from "../../components/PromoGIF";
 import PromoHot from "../../components/PromoHot";
 import FeedBack from "../../components/FeedBack";
+import BannerSection from "../Home/BannerSection";
 
 const LivestreamDetail = ({ ...rest }) => {
   const { id } = useParams();
@@ -31,35 +31,27 @@ const LivestreamDetail = ({ ...rest }) => {
 
   return (
     <div className="max-w-[1200px] mx-auto p-4">
-      <div className="mb-4">
+      <div className="my-4">
         <Marquee />
       </div>
-      <div>
-        <PromoGIF />
+
+      <div className="my-4 lg:block hidden">
+        <BannerSection />
       </div>
+
       <Row gutter={[16, 16]}>
-        <Col
-          xs={{ flex: "100%" }}
-          md={{ flex: "65%" }}
-          lg={{ flex: "65%" }}
-          xl={{ flex: "70%" }}
-        >
-          <Header />
+        <Col xs={{ flex: "100%" }} md={{ flex: "70%" }}>
+          {/* <Header /> */}
           <LivestreamPlayer liveId={id} />
         </Col>
         <Col
           xs={{ flex: "100%" }}
-          md={{ flex: "35%" }}
-          lg={{ flex: "35%" }}
-          xl={{ flex: "30%" }}
-          className="!overflow-hidden"
+          md={{ flex: "30%" }}
+          className="!overflow-hidden !pl-0"
         >
-          <div
-            className="w-full h-fit border border-[var(--color-brand-primary)] rounded-xl"
-            style={{ boxShadow: "0px 2px 0px 0px #02A9DC" }}
-          >
+          <div className="w-[86%] mx-auto h-fit border border-[var(--color-brand-primary)] rounded-xl bg-gradient-to-b from-white to-[var(--color-brand-primary-lighter)]">
             <div
-              className={`bg-[var(--color-brand-primary-lighter)] 
+              className={`bg-[var(--color-brand-primary)] 
                 text-white text-[16px] text-center uppercase 
                 rounded-lg font-bold py-[10px]
                 m-2
@@ -83,9 +75,9 @@ const LivestreamDetail = ({ ...rest }) => {
       {/* <div>
         <IdolHot />
       </div> */}
-      <div>
+      {/* <div>
         <IdolRating />
-      </div>
+      </div> */}
       <div className="lg:mt-8 mt-4">
         <NewsTab />
       </div>

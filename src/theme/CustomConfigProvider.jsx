@@ -18,14 +18,14 @@ export default function CustomConfigProvider({ children }) {
           },
           Menu: {
             itemBg: "var(--background-color)",
-            itemColor: "var(--text-color)",
+            itemColor: "var(--color-brand-primary-2)",
             itemHoverColor: "var(--color-brand-primary)",
             itemSelectedColor: "var(--color-brand-primary)",
             itemSelectedBg: "var(--background-color-2)",
             horizontalItemHoverColor: "var(--color-brand-primary)",
             horizontalItemSelectedColor: "var(--color-brand-primary)",
             horizontalLineHeight: "40px !important",
-            groupTitleColor: "var(--text-color)",
+            groupTitleColor: "var(--color-brand-primary-2)",
           },
           Table: {
             headerBg: "var(--table-header-bg)",

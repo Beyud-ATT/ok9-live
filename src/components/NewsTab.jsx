@@ -1,10 +1,8 @@
 import { Flex, Image, Typography } from "antd";
 import React, { useEffect, useMemo, useState } from "react";
 import useHomeNews from "../hooks/useHomeNews";
-import Left from "../assets/left.webp";
-import Right from "../assets/right.webp";
-// import NewsImg from "../assets/news.webp";
 import parse from "html-react-parser";
+import NewsImg from "../assets/news.webp";
 
 function NewsTab() {
   const [activeTab, setActiveTab] = useState(null);
@@ -12,36 +10,42 @@ function NewsTab() {
   const news = data?.data?.data;
   let i = 1;
 
-  const homeNews = useMemo(() => {
-    return news
-      ? news?.map((item) => {
-          return {
-            content: item.content,
-            image: item.image,
-            description: "",
-            id: `tab${i++}`,
-          };
-        })
-      : [];
-  }, [news, i]);
+  // const homeNews = useMemo(() => {
+  //   return news
+  //     ? news?.map((item) => {
+  //         return {
+  //           content: item.content,
+  //           image: item.image,
+  //           description: "",
+  //           id: `tab${i++}`,
+  //         };
+  //       })
+  //     : [];
+  // }, [news, i]);
 
-  // const homeNews = useMemo(
-  //   () => [
-  //     {
-  //       content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
-  //       image: NewsImg,
-  //       description: "",
-  //       id: 1,
-  //     },
-  //     {
-  //       content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
-  //       image: NewsImg,
-  //       description: "",
-  //       id: 2,
-  //     },
-  //   ],
-  //   []
-  // );
+  const homeNews = useMemo(
+    () => [
+      {
+        content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
+        image: NewsImg,
+        description: "",
+        id: 1,
+      },
+      {
+        content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
+        image: NewsImg,
+        description: "",
+        id: 2,
+      },
+      {
+        content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
+        image: NewsImg,
+        description: "",
+        id: 3,
+      },
+    ],
+    []
+  );
 
   useEffect(() => {
     setActiveTab(homeNews[0]?.id);
@@ -50,22 +54,16 @@ function NewsTab() {
   return (
     <div className="mb-2">
       <Flex
-        justify="space-between"
+        justify="center"
         align="center"
         className="lg:mb-7 md:mb-5 mb-3 pt-2"
       >
-        <Image
-          src={Left}
-          alt="left"
-          preview={false}
-          className="lg:block hidden"
-        />
         <Typography.Title
           level={3}
           className="lg:!text-4xl md:!text-2xl !font-bold font-utmBold !mb-0"
           style={{
             background:
-              "linear-gradient(180deg, #359EFF 48.35%, #1F79FF 81.94%)",
+              "linear-gradient(180deg, var(--color-brand-primary) 48.35%, var(--color-brand-primary) 81.94%)",
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
@@ -75,30 +73,25 @@ function NewsTab() {
         >
           TIN TỨC
         </Typography.Title>
-        <Image
-          src={Right}
-          alt="right"
-          preview={false}
-          className="lg:block hidden"
-        />
       </Flex>
       <div
-        className="flex md:flex-row flex-col gap-8 w-full p-6"
+        className="flex md:flex-row flex-col w-full p-6"
         style={{
           borderRadius: 20,
-          border: "0.517px solid #9AC6FF",
-          background: "linear-gradient(180deg, #EBF5FF 0%, #C2E2FF 100%)",
+          border: "0.517px solid var(--color-brand-primary)",
+          background:
+            "linear-gradient(180deg, #FFF 0%, var(--color-brand-primary-lighter) 100%)",
           boxShadow:
-            "1.034px 1.034px 2.069px 0px rgba(0, 0, 0, 0.10) inset, 2.069px 2.069px 2.069px 0px rgba(4, 37, 156, 0.25)",
+            "1.035px 1.035px 2.07px 0px rgba(0, 0, 0, 0.10) inset, 2.07px 2.07px 2.07px 0px rgba(4, 37, 156, 0.25)",
         }}
       >
         {/* Left side - Tab buttons */}
-        <div className="md:w-[50%] w-full">
+        <div className="md:w-[40%] w-full">
           {homeNews.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`w-full md:p-4 p-2 relative font-times text-justify`}
+              className={`w-full md:p-4 p-2 relative font-sfProDisplay`}
             >
               <div
                 className={`absolute left-0 top-0 bottom-0 w-1 transition-opacity duration-200 ${
@@ -108,7 +101,11 @@ function NewsTab() {
                 }`}
               />
               <h3
-                className={`mb-1 font-semibold text-[var(--color-brand-primary)] xl:text-[20px] lg:text-[18px] text-[14px]`}
+                className={`mb-1 font-semibold text-left xl:text-[20px] lg:text-[18px] text-[14px] ${
+                  activeTab === tab.id
+                    ? "text-[var(--color-brand-primary)]"
+                    : "text-[#797979]"
+                }`}
               >
                 {parse(tab.content)}
               </h3>

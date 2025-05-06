@@ -2,7 +2,8 @@ import { Col, Image, Row, Spin } from "antd";
 import useLiveHot from "../../hooks/useLiveHot";
 import LivestreamPlayer from "../../components/VideoPlayer";
 import { useEffect, useState } from "react";
-import DefaultBanner from "../../assets/default-banner.webp";
+import DefaultBanner from "../../assets/news.webp";
+import { videoHeightSettingInHome } from "../../utils/constant";
 
 const LiveSection = () => {
   const { data, isLoading } = useLiveHot();
@@ -21,14 +22,14 @@ const LiveSection = () => {
   return (
     <Row>
       {/* Main Stream */}
-      <Col xs={{ flex: "100%" }} md={{ flex: "80%" }}>
+      <Col xs={{ flex: "100%" }} md={{ flex: "70%" }}>
         <LivestreamPlayer liveId={selectedStream} />
       </Col>
 
       {/* Side Streams */}
       <Col
         xs={{ flex: "100%" }}
-        md={{ flex: "20%" }}
+        md={{ flex: "30%" }}
         className="overflow-y-auto md:mt-0 mt-2"
       >
         {isLoading ? (
@@ -39,7 +40,7 @@ const LiveSection = () => {
           <ul
             className={`flex md:flex-col ${
               isJustifyBetween ? "justify-between" : "gap-y-[1%]"
-            } h-full`}
+            } ${videoHeightSettingInHome} h-auto overflow-auto md:mt-0 mt-2`}
           >
             {liveData?.map((stream, index) => {
               const isSelected = selectedStream
@@ -53,7 +54,8 @@ const LiveSection = () => {
                 >
                   <Image
                     alt="Stream"
-                    src={stream.thumbnail ?? DefaultBanner}
+                    // src={stream.thumbnail ?? DefaultBanner}
+                    src={DefaultBanner}
                     className={`md:!w-[85%] md:!h-auto !w-[100px] !h-[55px] mx-auto object-cover aspect-video p-0.5 rounded-lg cursor-pointer ${
                       isSelected ? "bg-[var(--color-brand-primary)]" : ""
                     }`}
@@ -64,7 +66,7 @@ const LiveSection = () => {
                   <i
                     className={`${
                       isSelected
-                        ? "f8bet-icon-banner-arrow-left z-0 md:block hidden"
+                        ? "ok9-icon-banner-arrow-left z-0 md:block hidden"
                         : ""
                     }`}
                   ></i>

@@ -1,12 +1,9 @@
 import { Flex, Form, Image, Input, Select, Typography, Upload } from "antd";
-import { FaCamera } from "react-icons/fa";
 import useUserFeedback from "../hooks/useUserFeedback";
 import { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { toast } from "react-toastify";
 import { FEEDBACK_TYPE } from "../utils/constant";
-import Left from "../assets/left.webp";
-import Right from "../assets/right.webp";
 import Feedback from "../assets/feedback.png";
 import FeedbackIcon from "../assets/feedback-icon.png";
 
@@ -57,37 +54,25 @@ export default function FeedBack() {
   return (
     <>
       <Flex
-        justify="space-between"
+        justify="center"
         align="center"
         className="lg:mb-7 md:mb-5 mb-3 pt-2"
       >
-        <Image
-          src={Left}
-          alt="left"
-          preview={false}
-          className="lg:block hidden"
-        />
         <Typography.Title
           level={3}
           className="lg:!text-4xl md:!text-2xl !font-bold font-utmBold !mb-0 uppercase whitespace-nowrap"
           style={{
             background:
-              "linear-gradient(180deg, #359EFF 48.35%, #1F79FF 81.94%)",
+              "linear-gradient(180deg, var(--color-brand-primary) 48.35%, var(--color-brand-primary) 81.94%)",
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            paddingTop: "0.15em", // Add some padding at the top
-            lineHeight: 1.3, // Increase line height
+            paddingTop: "0.15em",
+            lineHeight: 1.3,
           }}
         >
           phản hồi khách hàng
         </Typography.Title>
-        <Image
-          src={Right}
-          alt="right"
-          preview={false}
-          className="lg:block hidden"
-        />
       </Flex>
 
       <Flex align="center" className="mb-6">
@@ -102,11 +87,11 @@ export default function FeedBack() {
         <div
           className="lg:w-[50%] w-full p-5"
           style={{
-            borderRadius: "20.126px",
-            border: "1.677px solid #FFF",
-            background: "#F5F9FF",
+            borderRadius: "20.101px",
+            border: "1.675px solid #FFF",
+            background: "linear-gradient(180deg, #FFF 0%, #F0FFF1 100%)",
             boxShadow:
-              "0px 3.354px 9.56px 9.224px rgba(49, 73, 133, 0.02), 0px 0px 7.212px 6.709px rgba(164, 190, 255, 0.25) inset",
+              "0px 3.35px 9.548px 9.213px rgba(54, 166, 56, 0.02), 0px 0px 7.203px 6.7px rgba(54, 166, 56, 0.25) inset",
           }}
         >
           <Form
@@ -146,10 +131,9 @@ export default function FeedBack() {
                 className={inputStyle}
                 style={{
                   borderRadius: "12px",
-                  border: "0.5px solid var(--main, #359EFF)",
+                  border: "0.5px solid var(--color-brand-primary)",
                   background: "#FFF",
-                  boxShadow:
-                    "0px 0px 14.4px 5px rgba(53, 158, 255, 0.08) inset, 2px 2px 4px 0px rgba(53, 158, 255, 0.30)",
+                  boxShadow: "none",
                 }}
               />
             </Form.Item>
@@ -177,7 +161,7 @@ export default function FeedBack() {
                     vertical
                     justify="center"
                     align="center"
-                    className="hover:text-[var(--color-brand-primary)] gap-1"
+                    className="hover:text-[var(--color-brand-primary)] gap-1 bg-white"
                   >
                     <Image src={FeedbackIcon} preview={false} />
                     <span className="text-[10px] text-[#586683]">
@@ -191,11 +175,11 @@ export default function FeedBack() {
                   type="primary"
                   className={`cursor-pointer w-full text-[20px] py-4 font-medium capitalize text-white`}
                   style={{
-                    borderRadius: "12px",
+                    borderRadius: "11.985px",
                     background:
-                      "radial-gradient(107.08% 85.59% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0.00) 86.18%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0.00) 69.79%, rgba(255, 255, 255, 0.00) 100%), #359EFF",
+                      "linear-gradient(0deg, var(--color-brand-primary) 0%, var(--color-brand-primary) 100%), radial-gradient(83.94% 83.94% at 26.39% 20.83%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0.00) 69.79%, rgba(255, 255, 255, 0.00) 100%), #359EFF",
                     boxShadow:
-                      "-3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset",
+                      "-2.996px -3.995px 6.991px 0px rgba(255, 255, 255, 0.15) inset",
                   }}
                 >
                   gửi phản hồi

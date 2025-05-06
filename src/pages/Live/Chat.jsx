@@ -417,7 +417,7 @@ function BareChatFrame() {
 function ChatInterface({ hideInput = false, ...rest }) {
   return (
     <div
-      className={`flex flex-col h-full w-full justify-between rounded-b-2xl  ${chatHeightSetting} bg-[#E8F1FF]`}
+      className={`flex flex-col h-full w-full justify-between rounded-b-2xl  ${chatHeightSetting}`}
       {...rest}
     >
       <ChatFrame />

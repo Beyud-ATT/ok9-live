@@ -14,8 +14,8 @@ export default function Logo({ forcePC, ...rest }) {
         alt="logo"
         loading="lazy"
         preview={false}
-        width={isMobile ? 115 : 193}
-        height={isMobile ? 46 : 80}
+        width={isMobile ? 80 : 193}
+        height={isMobile ? 32 : 80}
         {...rest}
       />
     </>

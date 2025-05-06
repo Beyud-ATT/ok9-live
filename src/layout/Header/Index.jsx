@@ -12,7 +12,16 @@ import UserActionDrawer from "./Mobile/UserActionDrawer";
 export default function BaseHeader({ ...rest }) {
   const { Header } = useLayoutContext();
   return (
-    <Header {...rest}>
+    <Header
+      {...rest}
+      style={{
+        border: "0.5px solid rgba(0, 18, 45, 0.06)",
+        background:
+          "linear-gradient(180deg, #FFF 0%, var(--color-brand-primary-lighter) 100%)",
+        boxShadow:
+          "0px 1px 0.1px 0px rgba(54, 166, 56, 0.25), 0px 4px 7.7px 0px rgba(54, 166, 56, 0.13), 0px -1px 5.5px 0px rgba(54, 166, 56, 0.20) inset, 0px 2px 2.7px 2px #FFF inset",
+      }}
+    >
       <Flex
         justify="space-between"
         align="center"

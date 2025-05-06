@@ -9,6 +9,7 @@ export default {
       times: ["Times", ...fontFamily.sans],
       utm: ["UTM Avo", ...fontFamily.sans],
       utmBold: ["UTM AvoBold", ...fontFamily.sans],
+      sfProDisplay: ["SF Pro Display", ...fontFamily.sans],
     },
   },
   plugins: [],

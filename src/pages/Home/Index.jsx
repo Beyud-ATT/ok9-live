@@ -2,25 +2,21 @@
 import FeedBack from "../../components/FeedBack";
 import Marquee from "../../components/Marquee";
 import NewsTab from "../../components/NewsTab";
-import PromoGIF from "../../components/PromoGIF";
 import PromoHot from "../../components/PromoHot";
 // import OnlineTable from "../../components/OnlineTable";
 // import PromotionSlider from "../../components/PromotionSlide";
 // import TopInteraction from "../../components/TopInteraction";
-// import BannerSection from "./BannerSection";
+import BannerSection from "./BannerSection";
 import LiveSection from "./LiveSection";
 
 export default function Home() {
   return (
     <div className="max-w-[1200px] mx-auto">
-      {/* <div>
-        <BannerSection />
-      </div> */}
-      <div>
+      <div className="my-4">
         <Marquee />
       </div>
-      <div>
-        <PromoGIF />
+      <div className="md:mb-4 mt-2">
+        <BannerSection />
       </div>
       <div>
         <LiveSection />

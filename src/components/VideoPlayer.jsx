@@ -24,7 +24,7 @@ import {
   videoHeightSettingInRoom,
 } from "../utils/constant";
 
-import DefaultBanner from "../assets/default-banner.webp";
+import DefaultBanner from "../assets/news.webp";
 
 const LivestreamPlayer = ({ liveId }) => {
   const pathname = useLocation().pathname;
@@ -363,8 +363,8 @@ const LivestreamPlayer = ({ liveId }) => {
       <div
         ref={containerRef}
         className={`w-full bg-black  ${
-          isLivePage ? "rounded-b-2xl" : "rounded-2xl"
-        } ${videoLiveHeightSetting} border border-[#1F79FF] overflow-hidden relative`}
+          isLivePage ? "rounded-2xl" : "rounded-2xl"
+        } ${videoLiveHeightSetting} border border-[var(--color-brand-primary)] overflow-hidden relative`}
       >
         {!isStreaming && !isLiveDetailLoading && !isLoading && (
           <div className={`bg-black/80 z-0 w-full h-full`}>
@@ -375,7 +375,8 @@ const LivestreamPlayer = ({ liveId }) => {
               className="w-full h-full "
             >
               <Image
-                src={liveDetailData?.thumbnail ?? DefaultBanner}
+                // src={liveDetailData?.thumbnail ?? DefaultBanner}
+                src={DefaultBanner}
                 preview={false}
                 loading="lazy"
               />
@@ -404,8 +405,16 @@ const LivestreamPlayer = ({ liveId }) => {
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center cursor-pointer">
             <Button
               variant="outlined"
-              className="md:p-6 p-2 rounded-full !bg-black/40 hover:!bg-[var(--color-brand-primary)] !text-[var(--color-brand-primary)] md:text-base text-[12px] hover:!text-white uppercase font-bold border-[var(--color-brand-primary)] hover:!border-white"
+              className="md:p-6 p-2 font-sfProDisplay rounded-full !bg-white hover:!bg-[var(--color-brand-primary)] !text-[var(--color-brand-primary)] md:text-base text-[12px] hover:!text-white uppercase font-bold border-[var(--color-brand-primary)] hover:!border-white"
               onClick={handleInitialPlay}
+              style={{
+                borderRadius: "43.963px",
+                border: " 1.499px solid text-[var(--color-brand-primary)]",
+                background:
+                  "radial-gradient(76.16% 76.16% at 31.97% 19.67%, #FFF 0%, rgba(255, 255, 255, 0.00) 69.79%, rgba(255, 255, 255, 0.00) 100%), #F1F1F1",
+                boxShadow:
+                  "0px 1.998px 4.696px 0px rgba(0, 0, 0, 0.07), 0px -2.998px 7.993px 0px rgba(255, 255, 255, 0.25) inset, 5.995px 8.993px 8.993px 0px rgba(255, 255, 255, 0.60) inset, 0px 1.998px 1.998px 0px rgba(255, 255, 255, 0.60) inset, -9.992px -11.99px 17.985px 0px rgba(91, 216, 255, 0.10) inset, 2.998px 3.997px 7.993px 0px rgba(255, 255, 255, 0.70)",
+              }}
             >
               Vào Phòng Live
             </Button>

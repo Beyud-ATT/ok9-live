@@ -55,7 +55,7 @@ export default function LiveMobile() {
 
   return (
     <div
-      className={`relative w-full h-[100dvh] overflow-hidden transition-all bg-[#E8F5FE] duration-300 ease-in-out`}
+      className={`relative w-full h-[100dvh] overflow-hidden transition-all duration-300 ease-in-out`}
     >
       <div
         className={`w-full overflow-hidden flex flex-col justify-between h-full`}
@@ -105,12 +105,9 @@ export default function LiveMobile() {
         </div>
 
         <div className="z-10 mx-2">
-          <div
-            className="w-full h-fit border border-[var(--color-brand-primary)] rounded-xl"
-            style={{ boxShadow: "0px 2px 0px 0px #02A9DC" }}
-          >
+          <div className="w-full h-fit border border-[var(--color-brand-primary)] rounded-xl bg-gradient-to-b from-white to-[var(--color-brand-primary-lighter)]">
             <div
-              className={`bg-[var(--color-brand-primary-lighter)] 
+              className={`bg-[var(--color-brand-primary)] 
                 text-white text-[16px] text-center uppercase 
                 rounded-lg font-bold py-[10px]
                 m-2

@@ -69,16 +69,22 @@
   src: url("/src/fonts/UTM_AvoBold.ttf");
 }
 
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/src/fonts/SF-Pro-Display-Regular.otf");
+}
+
 :root {
   --background-color: #f0f6ff;
-  --background-color-2: #e8f5fe;
+  --background-color-2: #d9d9d9;
   --background-footer: #303442;
   --lighter-background: #1f242f;
   --border-radius: 10px;
   --text-color: #667085;
   --text-color-login-signup: #85888e;
-  --color-brand-primary: #2f6eff;
-  --color-brand-primary-lighter: #50abff;
+  --color-brand-primary: #36a638;
+  --color-brand-primary-2: #3f7557;
+  --color-brand-primary-lighter: #f0fff1;
   --table-header-bg: #50abff;
   --table-border-color: #2f6eff;
   --disabled-field-bg: #dbdbdb;
@@ -196,10 +202,9 @@
 
   #feedback-form .ant-select-selector {
     border-radius: 12px;
-    border: 0.5px solid var(--main, #359eff);
+    border: 0.5px solid var(--color-brand-primary);
     background: #fff;
-    box-shadow: 0px 0px 14.4px 5px rgba(53, 158, 255, 0.08) inset,
-      2px 2px 4px 0px rgba(53, 158, 255, 0.3);
+    box-shadow: none;
     height: 44px;
   }
   #feedback-form .ant-select-selector .ant-select-selection-placeholder {
@@ -213,18 +218,12 @@
   }
 
   .ant-select-dropdown .ant-select-item-option-selected {
-    background: var(
-      --Linear,
-      linear-gradient(180deg, #359eff 48.35%, #1f79ff 81.94%)
-    );
+    background: var(--color-brand-primary);
     color: white;
   }
   .ant-select-dropdown
     .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
-    background: var(
-      --Linear,
-      linear-gradient(180deg, #359eff 48.35%, #1f79ff 81.94%)
-    );
+    background: var(--color-brand-primary);
     color: white;
   }
 
@@ -233,12 +232,12 @@
     border: 2px dashed var(--color-brand-primary);
   }
 
-  .f8bet-icon-banner-arrow-left {
+  .ok9-icon-banner-arrow-left {
     color: var(--color-brand-primary);
     cursor: pointer;
     position: absolute;
     top: 42%;
-    left: 4px;
+    left: 14px;
     border-top: 7.5px solid transparent;
     border-right: 15px solid var(--color-brand-primary);
     border-bottom: 7.5px solid transparent;
@@ -300,10 +299,10 @@
     color: var(--color-brand-primary);
   }
 
-  .ant-modal.login-modal,
+  /* .ant-modal.login-modal,
   .ant-modal.signup-modal {
     width: 1200px !important;
-  }
+  } */
 
   .ant-modal .ant-modal-content {
     background-color: transparent;
@@ -318,7 +317,15 @@
     border: none;
   }
 
+  .ant-menu-light {
+    background: transparent;
+  }
+
   .ant-menu-light.ant-menu-root.ant-menu-inline {
+    border: none;
+  }
+
+  .ant-menu-light.ant-menu-root.ant-menu-vertical {
     border: none;
   }
 
@@ -355,7 +362,7 @@
         rgba(255, 255, 255, 0) 69.79%,
         rgba(255, 255, 255, 0) 100%
       ),
-      #2f6eff;
+      var(--color-brand-primary);
     box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset;
   }
 

@@ -8,10 +8,10 @@ export default function Description() {
     <Flex vertical gap={36}>
       {!showMore ? (
         <p className="max-w-2xl text-sm text-justify">
-          F8BET là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle
-          of Man và Khu kinh tế Cagayan and Freeport cấp. Với bề dày kinh nghiệm
-          và danh tiếng phục vụ hơn 10 triệu người chơi, F8BET đã và đang khẳng
-          định vị thế của mình [...]
+          OK9 là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle of
+          Man và Khu kinh tế Cagayan and Freeport cấp. Với bề dày kinh nghiệm và
+          danh tiếng phục vụ hơn 10 triệu người chơi, OK9 đã và đang khẳng định
+          vị thế của mình [...]
           <span
             className="cursor-pointer hover:underline pl-2 text-[#FFD94F] underline"
             onClick={() => setShowMore((state) => !state)}
@@ -21,14 +21,14 @@ export default function Description() {
         </p>
       ) : (
         <p className="max-w-2xl text-sm text-justify">
-          F8BET là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle
-          of Man và Khu kinh tế Cagayan and Freeport cấp. Với bề dày kinh nghiệm
-          và danh tiếng phục vụ hơn 10 triệu người chơi, F8BET đã và đang khẳng
-          định vị thế của mình trên thị trường game trực tuyến. Với tư cách là
-          một công ty trò chơi trực tuyến có trụ sở tại Luân Đôn, Anh, sở hữu
-          đội ngũ nhân tài chuyên nghiệp đông đảo cung cấp sản phẩm phục vụ chất
-          lượng cao. F8BET đảm bảo không tiết lộ thông tin cá nhân khách hàng
-          cho bất kỳ bên thứ ba nào, sử dụng tiêu chuẩn mã hoá dữ liệu ở mức cao
+          OK9 là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle of
+          Man và Khu kinh tế Cagayan and Freeport cấp. Với bề dày kinh nghiệm và
+          danh tiếng phục vụ hơn 10 triệu người chơi, OK9 đã và đang khẳng định
+          vị thế của mình trên thị trường game trực tuyến. Với tư cách là một
+          công ty trò chơi trực tuyến có trụ sở tại Luân Đôn, Anh, sở hữu đội
+          ngũ nhân tài chuyên nghiệp đông đảo cung cấp sản phẩm phục vụ chất
+          lượng cao. OK9 đảm bảo không tiết lộ thông tin cá nhân khách hàng cho
+          bất kỳ bên thứ ba nào, sử dụng tiêu chuẩn mã hoá dữ liệu ở mức cao
           nhất. Tất cả thông tin cá nhân đều được thông qua hệ thống bảo mật -
           Secure Socket (Chuẩn mã hóa SS 128-bit), đồng thời được bảo vệ trong
           môi trường quản lý an toàn đảm bảo không thể truy cập từ các khu vực

@@ -529,12 +529,12 @@ const FEEDBACK_TYPE = {
       </Flex>
     ),
   },
-  TALK_WITH_F8BET: {
+  TALK_WITH_OK9: {
     value: 4,
     label: (
       <Flex align="center" gap={5}>
         {/* <Feedback4 /> */}
-        <span className={optionLabelStyle}>Tâm sự cùng F8BET</span>
+        <span className={optionLabelStyle}>Tâm sự cùng OK9</span>
       </Flex>
     ),
   },

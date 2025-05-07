@@ -16,7 +16,7 @@ export default function PromoHot() {
     {
       id: 2,
       imageUrl: Slide2,
-      title: "NHẬN GIFTCODE KHỦNG TỪ F8BET CHIA SẺ NGAY RINH QUÀ HAY",
+      title: "NHẬN GIFTCODE KHỦNG TỪ OK9 CHIA SẺ NGAY RINH QUÀ HAY",
     },
     {
       id: 3,

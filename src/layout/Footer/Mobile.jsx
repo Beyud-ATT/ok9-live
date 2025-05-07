@@ -110,13 +110,13 @@ export default function MobileFooter() {
               </p>
               <Row className="md:w-[60%] w-full">
                 <Col span={6}>
-                  <Link to="https://f8page10.com/F8BETgiaitri" target="_blank">
+                  <Link to="https://f8page10.com/OK9giaitri" target="_blank">
                     <Footer11 width={20} height={20} fill={fill} />
                   </Link>
                 </Col>
                 <Col span={6}>
                   <Link
-                    to="https://www.facebook.com/f8betgiaitri0"
+                    to="https://www.facebook.com/OK9giaitri0"
                     target="_blank"
                   >
                     <Footer12 width={20} height={20} fill={fill} />
@@ -124,7 +124,7 @@ export default function MobileFooter() {
                 </Col>
                 <Col span={6}>
                   <Link
-                    to="https://www.youtube.com/@F8BETgiaitri0"
+                    to="https://www.youtube.com/@OK9giaitri0"
                     target="_blank"
                   >
                     <Footer13 width={20} height={20} fill={fill} />
@@ -160,19 +160,19 @@ export default function MobileFooter() {
             <Logo forcePC width={128} height={61} />
           </Typography.Title>
           <p className="text-justify text-[#0053E0]">
-            F8BET là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do
-            Isle of Man và Khu kinh tế Cagayan and Freeport cấp. Với bề dày kinh
-            nghiệm và danh tiếng phục vụ hơn 10 triệu người chơi, F8BET đã và
-            đang khẳng định vị thế của mình trên thị trường game trực tuyến. Với
-            tư cách là một công ty trò chơi trực tuyến có trụ sở tại Luân Đôn,
-            Anh, sở hữu đội ngũ nhân tài chuyên nghiệp đông đảo cung cấp sản
-            phẩm phục vụ chất lượng cao. F8BET đảm bảo không tiết lộ thông tin
-            cá nhân khách hàng cho bất kỳ bên thứ ba nào, sử dụng tiêu chuẩn mã
-            hoá dữ liệu ở mức cao nhất. Tất cả thông tin cá nhân đều được thông
-            qua hệ thống bảo mật - Secure Socket (Chuẩn mã hóa SS 128-bit), đồng
-            thời được bảo vệ trong môi trường quản lý an toàn đảm bảo không thể
-            truy cập từ các khu vực mạng công cộng. Tất cả dữ liệu ra vào đều bị
-            hạn chế, giám sát nghiêm ngặt và quản lý chặt chẽ nhằm mang đến cho
+            OK9 là một nhà cái có giấy phép cá cược trực tuyến hợp pháp do Isle
+            of Man và Khu kinh tế Cagayan and Freeport cấp. Với bề dày kinh
+            nghiệm và danh tiếng phục vụ hơn 10 triệu người chơi, OK9 đã và đang
+            khẳng định vị thế của mình trên thị trường game trực tuyến. Với tư
+            cách là một công ty trò chơi trực tuyến có trụ sở tại Luân Đôn, Anh,
+            sở hữu đội ngũ nhân tài chuyên nghiệp đông đảo cung cấp sản phẩm
+            phục vụ chất lượng cao. OK9 đảm bảo không tiết lộ thông tin cá nhân
+            khách hàng cho bất kỳ bên thứ ba nào, sử dụng tiêu chuẩn mã hoá dữ
+            liệu ở mức cao nhất. Tất cả thông tin cá nhân đều được thông qua hệ
+            thống bảo mật - Secure Socket (Chuẩn mã hóa SS 128-bit), đồng thời
+            được bảo vệ trong môi trường quản lý an toàn đảm bảo không thể truy
+            cập từ các khu vực mạng công cộng. Tất cả dữ liệu ra vào đều bị hạn
+            chế, giám sát nghiêm ngặt và quản lý chặt chẽ nhằm mang đến cho
             người chơi trải nghiệm người dùng an toàn tuyệt đối.
           </p>
         </div>

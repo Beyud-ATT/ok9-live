@@ -113,13 +113,13 @@ export default function BaseFooter() {
           <Footer8 />
           <Footer9 />
           <Footer10 />
-          <Link to="https://f8page10.com/F8BETgiaitri" target="_blank">
+          <Link to="https://f8page10.com/OK9giaitri" target="_blank">
             <Footer11 />
           </Link>
-          <Link to="https://www.facebook.com/f8betgiaitri0" target="_blank">
+          <Link to="https://www.facebook.com/OK9giaitri0" target="_blank">
             <Footer12 />
           </Link>
-          <Link to="https://www.youtube.com/@F8BETgiaitri0" target="_blank">
+          <Link to="https://www.youtube.com/@OK9giaitri0" target="_blank">
             <Footer13 />
           </Link>
         </Flex>
@@ -130,7 +130,7 @@ export default function BaseFooter() {
           </Link>
           <span>|</span>
           <Link to="#" className="xl:text-[16px] text-[12px]">
-            Giới Thiệu Về F8BET
+            Giới Thiệu Về OK9
           </Link>
           <span>|</span>
           <Link to="#" className="xl:text-[16px] text-[12px]">
@@ -142,7 +142,7 @@ export default function BaseFooter() {
           </Link>
           <span>|</span>
           <Link to="#" className="xl:text-[16px] text-[12px]">
-            Quyền Riêng Tư Tại F8BET
+            Quyền Riêng Tư Tại OK9
           </Link>
           <span>|</span>
           <Link to="#" className="xl:text-[16px] text-[12px]">
@@ -150,7 +150,7 @@ export default function BaseFooter() {
           </Link>
         </Flex>
 
-        <div>Copyright © F8BET.COM Reserved</div>
+        <div>Copyright © OK9.COM Reserved</div>
       </Flex>
     </Footer>
   );

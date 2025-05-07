@@ -21,7 +21,7 @@ export default function BurgerTopNav() {
         key: "home",
         render: (props) => {
           return (
-            <Link to="https://f8beta2.com" {...props} className={menuItemStyle}>
+            <Link to="" {...props} className={menuItemStyle}>
               Trang chủ
             </Link>
           );

@@ -7,10 +7,10 @@ export default function Privacy() {
         level={1}
         className="!text-[var(--color-brand-primary)]"
       >
-        Chính Sách Bảo Mật Thông Tin - F8BET
+        Chính Sách Bảo Mật Thông Tin - OK9
       </Typography.Title>
       <p>
-        F8BET cam kết bảo vệ quyền riêng tư của khách hàng với các tiêu chuẩn an
+        OK9 cam kết bảo vệ quyền riêng tư của khách hàng với các tiêu chuẩn an
         toàn dữ liệu cao nhất. Dưới đây là chính sách bảo mật của chúng tôi,
         được thiết kế nhằm đảm bảo an toàn thông tin cá nhân của bạn.
       </p>
@@ -18,14 +18,14 @@ export default function Privacy() {
         level={2}
         className="!text-[var(--color-brand-primary)]"
       >
-        1. Bảo Mật Thông Tin Cá Nhân tại F8BET
+        1. Bảo Mật Thông Tin Cá Nhân tại OK9
       </Typography.Title>
       <p>
-        Tại F8BET, chúng tôi luôn giữ bảo mật tuyệt đối dữ liệu cá nhân của
-        khách hàng. Thông tin cá nhân chỉ được tiết lộ khi: <br /> - Có yêu cầu
-        từ cơ quan pháp luật hoặc lệnh từ tòa án. <br /> - Cần thiết để hoàn
-        thành dịch vụ thông qua các nhà cung cấp thanh toán uy tín và cơ quan
-        tài chính liên kết với F8BET.
+        Tại OK9, chúng tôi luôn giữ bảo mật tuyệt đối dữ liệu cá nhân của khách
+        hàng. Thông tin cá nhân chỉ được tiết lộ khi: <br /> - Có yêu cầu từ cơ
+        quan pháp luật hoặc lệnh từ tòa án. <br /> - Cần thiết để hoàn thành
+        dịch vụ thông qua các nhà cung cấp thanh toán uy tín và cơ quan tài
+        chính liên kết với OK9.
       </p>
       <Typography.Title
         level={2}
@@ -46,9 +46,9 @@ export default function Privacy() {
         3. Chính Sách Liên Lạc Qua Email
       </Typography.Title>
       <p>
-        - Khi khách hàng không thể truy cập vào trang web của F8BET có thể gửi
-        tin nhắn trực tiếp đến email chính thức admin@F8BET.com hệ thống sẽ phản
-        hồi tự động gửi đường link truy cập mới nhất.
+        - Khi khách hàng không thể truy cập vào trang web của OK9 có thể gửi tin
+        nhắn trực tiếp đến email chính thức admin@OK9.com hệ thống sẽ phản hồi
+        tự động gửi đường link truy cập mới nhất.
       </p>
       <p>
         Chúng tôi cam kết không chia sẻ dữ liệu nhận dạng cá nhân của khách hàng
@@ -58,11 +58,11 @@ export default function Privacy() {
         level={2}
         className="!text-[var(--color-brand-primary)]"
       >
-        F8BET - Nơi Khách Hàng Đặt Niềm Tin
+        OK9 - Nơi Khách Hàng Đặt Niềm Tin
       </Typography.Title>
       <p>
         Với chính sách bảo mật minh bạch, hệ thống công nghệ tiên tiến và cam
-        kết bảo vệ quyền lợi khách hàng, F8BET mang đến sự an tâm tuyệt đối. Hãy
+        kết bảo vệ quyền lợi khách hàng, OK9 mang đến sự an tâm tuyệt đối. Hãy
         đồng hành cùng chúng tôi để trải nghiệm dịch vụ an toàn và chuyên
         nghiệp.
       </p>

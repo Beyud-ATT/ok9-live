@@ -7,7 +7,7 @@ export default function Rule() {
         level={1}
         className="!text-[var(--color-brand-primary)]"
       >
-        Điều Khoản &amp; Điều Kiện F8BET
+        Điều Khoản &amp; Điều Kiện OK9
       </Typography.Title>
       <Typography.Title
         level={2}
@@ -16,22 +16,22 @@ export default function Rule() {
         1. Các quy định về tài khoản
       </Typography.Title>
       <p>
-        Khi người chơi đăng ký sử dụng F8BET, điều này đồng nghĩa với việc người
+        Khi người chơi đăng ký sử dụng OK9, điều này đồng nghĩa với việc người
         chơi đã đọc, hiểu và đồng ý các quy định, điều khoản, và quy tắc tại
-        F8BET.
+        OK9.
       </p>
       <p>
         - Cam kết cung cấp thông tin chính xác: Người chơi phải đảm bảo rằng
         tên, email, số điện thoại, và các thông tin cá nhân trùng khớp với giấy
         tờ tùy thân và tài khoản ngân hàng.
-        <br /> - Vi phạm quy định: F8BET có quyền từ chối phục vụ, đóng băng tài
+        <br /> - Vi phạm quy định: OK9 có quyền từ chối phục vụ, đóng băng tài
         khoản và xử lý tùy và mức độ vi phạm nghiêm trọng.
         <br /> - Tranh chấp: Người chơi nên theo dõi quá trình chơi và kiểm tra
         thông tin tài khoản trước khi kết thúc.
-        <br /> - Nhiều tài khoản: F8BET có quyền đóng hoặc giữ lại một tài khoản
+        <br /> - Nhiều tài khoản: OK9 có quyền đóng hoặc giữ lại một tài khoản
         duy nhất.
         <br /> - Quyết định cuối cùng: Trong bất kỳ trường hợp nào, quyết định
-        của F8BET là quyết định cuối cùng.
+        của OK9 là quyết định cuối cùng.
       </p>
       <Typography.Title
         level={2}
@@ -45,8 +45,8 @@ export default function Rule() {
         hiện giao dịch chưa được xác nhận.
         <br /> - Tiền gửi qua bên thứ 3: Liên hệ ngay với bộ phận CSKH để xác
         nhận giao dịch.
-        <br /> - Quyết định cuối cùng: F8BET không chịu trách nhiệm nếu giao
-        dịch không được xác nhận.
+        <br /> - Quyết định cuối cùng: OK9 không chịu trách nhiệm nếu giao dịch
+        không được xác nhận.
       </p>
       <Typography.Title
         level={2}
@@ -71,9 +71,9 @@ export default function Rule() {
         khuyến mãi.
         <br /> - Hạn chế khuyến mãi: Mỗi người chơi chỉ nhận ưu đãi khi gửi yêu
         cầu xác thực.
-        <br /> - Sử dụng khuyến mãi không trung thực: F8BET có quyền hủy và thu
+        <br /> - Sử dụng khuyến mãi không trung thực: OK9 có quyền hủy và thu
         hồi khuyến mãi mà không cần báo trước.
-        <br /> - Thay đổi chương trình: F8BET có quyền chỉnh sửa hoặc chấm dứt
+        <br /> - Thay đổi chương trình: OK9 có quyền chỉnh sửa hoặc chấm dứt
         chương trình khuyến mãi bất kỳ lúc nào.
       </p>
       <Typography.Title
@@ -83,10 +83,9 @@ export default function Rule() {
         5. Quyền hạn sử dụng
       </Typography.Title>
       <p>
-        Người chơi khi tham gia F8BET đã đồng ý với toàn bộ điều khoản, quy tắc
-        và dịch vụ. F8BET có quyền thay đổi điều khoản nhằm phù hợp với hoạt
-        động kinh doanh và phù hợp với các yêu cầu của thị trường game trực
-        tuyến.
+        Người chơi khi tham gia OK9 đã đồng ý với toàn bộ điều khoản, quy tắc và
+        dịch vụ. OK9 có quyền thay đổi điều khoản nhằm phù hợp với hoạt động
+        kinh doanh và phù hợp với các yêu cầu của thị trường game trực tuyến.
       </p>
     </div>
   );

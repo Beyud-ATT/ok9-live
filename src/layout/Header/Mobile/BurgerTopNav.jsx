@@ -69,7 +69,7 @@ export default function BurgerTopNav() {
         key: "download",
         render: (props) => (
           <Link
-            to="https://f8page10.com/CODE"
+            to="https://ok9e.co/sitefreecode"
             target="_blank"
             {...props}
             className={menuItemStyle}

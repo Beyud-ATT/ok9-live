@@ -13,7 +13,7 @@ export default function BannerSection() {
   return (
     <div>
       <Flex className="w-full">
-        <Flex className="md:w-[70%] w-full">
+        <Flex className="pb-2 md:pb-0 md:w-[70%] w-full">
           <Link to={linkWeb} target="_blank">
             <Image
               src={Banner}

@@ -23,7 +23,7 @@ export default function BannerSection() {
             />
           </Link>
         </Flex>
-        <Flex justify="end" className="w-[30%] md:block hidden">
+        <Flex justify="end" className="w-[30%] md:block hidden mb-[10%] md:mb-[8px]">
           <Flex
             justify="space-around"
             align="center"

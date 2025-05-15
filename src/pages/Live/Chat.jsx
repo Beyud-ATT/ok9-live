@@ -270,7 +270,7 @@ function ChatFrame({ ...rest }) {
                     <div
                       className={`flex gap-0.5 text-[var(--color-brand-primary)] text-sm font-medium mb-1 ${
                         isSpecial
-                          ? "text-[var(--color-brand-primary-lighter)]"
+                          ? "text-[var(--color-brand-primary)]"
                           : ""
                       }`}
                     >
@@ -283,7 +283,7 @@ function ChatFrame({ ...rest }) {
                     <div
                       className={`text-black text-xs leading-relaxed ${
                         isSpecial
-                          ? "!text-[var(--color-brand-primary-lighter)] font-semibold"
+                          ? "!text-[var(--text-color)] font-semibold"
                           : ""
                       } break-all`}
                     >

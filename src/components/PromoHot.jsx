@@ -68,11 +68,11 @@ export default function PromoHot() {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          className="rounded-xl overflow-hidden"
+          className="rounded-sm md:rounded-xl overflow-hidden"
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="relative rounded-xl overflow-hidden bg-gray-100">
+              <div className="relative rounded-sm md:rounded-xl overflow-hidden bg-gray-100">
                 <Image
                   src={slide.imageUrl}
                   alt={slide.title}

@@ -13,6 +13,7 @@ import { FaRegSmile } from "react-icons/fa";
 import useLiveDetail from "../../hooks/useLiveDetail";
 import dayjs from "dayjs";
 import { toast } from "react-toastify";
+import DOMPurify from "isomorphic-dompurify";
 
 function EmojiPickerCustom({ onPickEmoji, open, onChange }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,7 +93,7 @@ export default function ChatBar() {
     }
 
     if (message !== "") {
-      const newMsg = message.replace(/\n/g, "<br/>").trim();
+      const newMsg = DOMPurify.sanitize(message).replace(/\n/g, "<br/>").trim();
       if (!isSendCode) {
         sendChatMessage({ hub: id, message: newMsg });
         setMessage("");

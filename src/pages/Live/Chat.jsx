@@ -4,9 +4,8 @@ import { useSignalR } from "../../contexts/SIgnalRContext";
 import { FaBell, FaRegEyeSlash } from "react-icons/fa";
 import { FaCrown } from "react-icons/fa6";
 import useLiveDetail from "../../hooks/useLiveDetail";
-import { Link, useParams } from "react-router";
+import { useParams } from "react-router";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
-import parse from "html-react-parser";
 import useBannedChat from "../../hooks/useBannedChat";
 import useAddBannedChat from "../../hooks/useAddBannedChat";
 import moment from "moment/moment";
@@ -43,7 +42,7 @@ function ShowMore({ message, show }) {
       }}
     >
       {(show !== undefined ? show : showMore) ? (
-        <span>{parse(message)}</span>
+        <span>{message}</span>
       ) : (
         <span>{truncatedMessage}</span>
       )}
@@ -269,9 +268,7 @@ function ChatFrame({ ...rest }) {
                   <div className="flex gap-1">
                     <div
                       className={`flex gap-0.5 text-[var(--color-brand-primary)] text-sm font-medium mb-1 ${
-                        isSpecial
-                          ? "text-[var(--color-brand-primary)]"
-                          : ""
+                        isSpecial ? "text-[var(--color-brand-primary)]" : ""
                       }`}
                     >
                       <span>{comment.displayName}</span>
@@ -287,7 +284,7 @@ function ChatFrame({ ...rest }) {
                           : ""
                       } break-all`}
                     >
-                      {parse(comment.message)}
+                      {comment.message}
                     </div>
                   </div>
                   <div className="text-black cursor-pointer">
@@ -402,7 +399,7 @@ function BareChatFrame() {
                       : ""
                   }`}
                 >
-                  {parse(comment.message)}
+                  {comment.message}
                 </div>
               </div>
             </div>

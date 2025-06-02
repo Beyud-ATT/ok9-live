@@ -1,9 +1,8 @@
-import { Button, Flex, Image } from "antd";
-import Banner from "../../assets/banner-main.png";
+import { Flex, Image } from "antd";
+import Banner from "../../assets/banner-main.webp";
 import DownloadNow from "../../assets/download-now.png";
 import Android from "../../assets/android.png";
 import IOS from "../../assets/ios.png";
-import { Hono } from "../../utils/svg";
 import { Link } from "react-router";
 import useGetGeneralLinks from "../../hooks/useGetGeneralLinks";
 
@@ -13,7 +12,7 @@ export default function BannerSection() {
   return (
     <div>
       <Flex className="w-full">
-        <Flex className="pb-2 md:pb-0 md:w-[70%] w-full">
+        <Flex className="pb-2 md:pb-0 w-full">
           <Link to={linkWeb} target="_blank">
             <Image
               src={Banner}
@@ -23,7 +22,10 @@ export default function BannerSection() {
             />
           </Link>
         </Flex>
-        <Flex justify="end" className="w-[30%] md:block hidden mb-[10%] md:mb-[8px]">
+        {/* <Flex
+          justify="end"
+          className="w-[30%] md:block hidden mb-[10%] md:mb-[8px]"
+        >
           <Flex
             justify="space-around"
             align="center"
@@ -91,7 +93,7 @@ export default function BannerSection() {
               </button>
             </Flex>
           </Flex>
-        </Flex>
+        </Flex> */}
       </Flex>
     </div>
   );

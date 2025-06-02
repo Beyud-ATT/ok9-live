@@ -2,7 +2,7 @@ import { Flex, Image, Typography } from "antd";
 import React, { useEffect, useMemo, useState } from "react";
 import useHomeNews from "../hooks/useHomeNews";
 import parse from "html-react-parser";
-import NewsImg from "../assets/news.webp";
+// import NewsImg from "../assets/news.webp";
 
 function NewsTab() {
   const [activeTab, setActiveTab] = useState(null);
@@ -10,42 +10,42 @@ function NewsTab() {
   const news = data?.data?.data;
   let i = 1;
 
-  // const homeNews = useMemo(() => {
-  //   return news
-  //     ? news?.map((item) => {
-  //         return {
-  //           content: item.content,
-  //           image: item.image,
-  //           description: "",
-  //           id: `tab${i++}`,
-  //         };
-  //       })
-  //     : [];
-  // }, [news, i]);
+  const homeNews = useMemo(() => {
+    return news
+      ? news?.map((item) => {
+          return {
+            content: item.content,
+            image: item.image,
+            description: "",
+            id: `tab${i++}`,
+          };
+        })
+      : [];
+  }, [news, i]);
 
-  const homeNews = useMemo(
-    () => [
-      {
-        content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
-        image: NewsImg,
-        description: "",
-        id: 1,
-      },
-      {
-        content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
-        image: NewsImg,
-        description: "",
-        id: 2,
-      },
-      {
-        content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
-        image: NewsImg,
-        description: "",
-        id: 3,
-      },
-    ],
-    []
-  );
+  // const homeNews = useMemo(
+  //   () => [
+  //     {
+  //       content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
+  //       image: NewsImg,
+  //       description: "",
+  //       id: 1,
+  //     },
+  //     {
+  //       content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
+  //       image: NewsImg,
+  //       description: "",
+  //       id: 2,
+  //     },
+  //     {
+  //       content: "08/03/2025 CÙNG IDOL LIZ - LIVESTREAM NHẬN THƯỞNG",
+  //       image: NewsImg,
+  //       description: "",
+  //       id: 3,
+  //     },
+  //   ],
+  //   []
+  // );
 
   useEffect(() => {
     setActiveTab(homeNews[0]?.id);

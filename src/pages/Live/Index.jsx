@@ -49,7 +49,7 @@ const LivestreamDetail = ({ ...rest }) => {
           md={{ flex: "30%" }}
           className="!overflow-hidden !pl-0"
         >
-          <div className="w-[86%] mx-auto h-fit border border-[var(--color-brand-primary)] rounded-xl bg-gradient-to-b from-white to-[var(--color-brand-primary-lighter)]">
+          <div className="w-[95%] ml-auto h-fit border border-[var(--color-brand-primary)] rounded-xl bg-gradient-to-b from-white to-[var(--color-brand-primary-lighter)]">
             <div
               className={`bg-[var(--color-brand-primary)] 
                 text-white text-[16px] text-center uppercase 

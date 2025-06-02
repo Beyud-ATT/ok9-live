@@ -1,14 +1,14 @@
 import { Flex, Image } from "antd";
 import Banner from "../../assets/banner-main.webp";
-import DownloadNow from "../../assets/download-now.png";
-import Android from "../../assets/android.png";
-import IOS from "../../assets/ios.png";
+// import DownloadNow from "../../assets/download-now.png";
+// import Android from "../../assets/android.png";
+// import IOS from "../../assets/ios.png";
 import { Link } from "react-router";
 import useGetGeneralLinks from "../../hooks/useGetGeneralLinks";
 
 export default function BannerSection() {
   const { generalLinks } = useGetGeneralLinks();
-  const { linkWeb, linkApp } = generalLinks?.data?.data || {};
+  const { linkWeb } = generalLinks?.data?.data || {};
   return (
     <div>
       <Flex className="w-full">

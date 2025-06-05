@@ -1,5 +1,5 @@
 import { Flex, Image } from "antd";
-import Banner from "../../assets/banner-main.webp";
+import Banner from "../../assets/banner-main.gif";
 // import DownloadNow from "../../assets/download-now.png";
 // import Android from "../../assets/android.png";
 // import IOS from "../../assets/ios.png";

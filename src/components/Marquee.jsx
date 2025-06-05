@@ -37,9 +37,14 @@ export default function Marquee() {
           </Flex>
           <ReactFastMarquee className="text-black overflow-hidden">
             <span className="md:text-[16px]">
-              💥💥CHÀO MỪNG SINH NHẬT OK9. Bùng nổ seri khuyến mãi siêu khủng từ
-              ngày 03/10 đến 17/10 nhân dịp sự kiện đặt biệt này. Nhanh tay đăng
-              nhập để tham gia và nhận hàng ngàn phần thưởng cực hot nhé!🎁🎁
+              ⚽️ GIẢI TRÍ CỰC ĐỈNH - QUÀ TẶNG CỰC PHẨM CHỈ CÓ TẠI OK9! Mỗi thứ
+              2 hàng tuần OK9 mang đến một buổi Livestream đỉnh cao. 🎁 ĐÓN CƠN
+              MƯA HỒNG BAO VÀO CÁC NGÀY 09 - 19 - 29 MỖI THÁNG! Lì xì định kỳ
+              siêu hấp dẫn. 🎁 THƯỞNG NẠP ĐẦU LÊN TỚI 18,888,000 VNĐ 🎁 BẢO HIỂM
+              100% ĐƠN CƯỢC THỂ THAO ĐẦU TIÊN 🎁 ĐĂNG KÝ TÀI KHOẢN NHẬN NGAY 59K
+              TRẢI NGHIỆM MIỄN PHÍ 🎁 NGOÀI RA CÒN NHIỀU KHUYẾN MÃI SIÊU HẤP DẪN
+              HÃY NHANH TAY THAM GIA OK9 NGAY HÔM NAY. 💥 Link dễ nhớ:{" "}
+              <a href="https://ok9aa.com">ok9aa.com</a>
             </span>
           </ReactFastMarquee>
         </Flex>

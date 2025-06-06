@@ -26,7 +26,7 @@ export default function PromoHot() {
   ];
 
   return (
-    <div className="mx-auto max-w-[calc(96vw)] md:max-w-[calc(96vw-24px)]">
+    <div className="mx-auto max-w-[calc(96vw-24px)]">
       <Flex
         justify="center"
         align="center"

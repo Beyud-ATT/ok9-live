@@ -35,8 +35,8 @@ export default function Marquee() {
               TIN TỨC MỚI NHẤT
             </span>
           </Flex>
-          <ReactFastMarquee className="text-black overflow-hidden">
-            <span className="md:text-[16px]">
+          <ReactFastMarquee className="text-black overflow-hidden !w-[90%]">
+            <span className="md:text-[16px] text-[12px]">
               ⚽️ GIẢI TRÍ CỰC ĐỈNH - QUÀ TẶNG CỰC PHẨM CHỈ CÓ TẠI OK9! Mỗi thứ
               2 hàng tuần OK9 mang đến một buổi Livestream đỉnh cao. 🎁 ĐÓN CƠN
               MƯA HỒNG BAO VÀO CÁC NGÀY 09 - 19 - 29 MỖI THÁNG! Lì xì định kỳ

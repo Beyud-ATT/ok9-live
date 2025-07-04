@@ -83,7 +83,7 @@ export default function BurgerTopNav() {
   );
 
   return (
-    <div className="md:hidden block">
+    <div className="lg:hidden block">
       <button
         className="rounded-full bg-[var(--background-color)] hover:bg-[var(--background-color)] flex items-center justify-center"
         onClick={() => setIsOpen(true)}

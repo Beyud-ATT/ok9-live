@@ -113,6 +113,10 @@
     background: transparent;
   }
 
+  .ant-layout-header {
+    background-size: contain;
+  }
+
   .ant-table {
     /* border: 1px solid var(--table-border-color) !important; */
     border-bottom: 0 !important;
@@ -364,6 +368,13 @@
       ),
       var(--color-brand-primary);
     box-shadow: -3px -4px 7px 0px rgba(255, 255, 255, 0.15) inset;
+  }
+
+  @media (max-width: 1920px) {
+    .ant-layout-header {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (max-width: 425px) {

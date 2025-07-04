@@ -15,7 +15,7 @@ export default function GroupButton() {
             render={(openModal) => (
               <Button
                 id="login-button"
-                className="border-none !text-[var(--color-brand-primary-2)] font-medium capitalize lg:!text-base !text-[12px]"
+                className="border-none !text-[var(--color-brand-primary-2)] font-medium capitalize lg:!text-base !text-[10px]"
                 onClick={openModal}
                 style={{
                   borderRadius: "44px",
@@ -47,7 +47,7 @@ export default function GroupButton() {
             render={(openModal) => (
               <Button
                 id="signup-button"
-                className="border-none capitalize px-5 py-1 text-white font-medium lg:!text-base !text-[12px]"
+                className="border-none capitalize px-5 py-1 text-white font-medium lg:!text-base !text-[10px]"
                 onClick={openModal}
                 style={{
                   borderRadius: "109px",

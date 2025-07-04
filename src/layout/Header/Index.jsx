@@ -6,26 +6,33 @@ import BurgerTopNav from "./Mobile/BurgerTopNav";
 import GroupButton from "./GroupButton";
 import { Link } from "react-router";
 import UserActionDropdown from "./PC/UserActionDropDown";
-import DeviceProvider from "../../contexts/ResponsiveContext";
+import DeviceProvider, {
+  screenType,
+  useDevice,
+} from "../../contexts/ResponsiveContext";
 import UserActionDrawer from "./Mobile/UserActionDrawer";
+import HeaderPCBG from "../../assets/header-pc-bg.gif";
+import HeaderMBBG from "../../assets/header-mobile-bg.gif";
+import { backIn } from "framer-motion";
 
 export default function BaseHeader({ ...rest }) {
   const { Header } = useLayoutContext();
+  const { deviceType } = useDevice();
   return (
     <Header
       {...rest}
       style={{
         border: "0.5px solid rgba(0, 18, 45, 0.06)",
-        background:
-          "linear-gradient(180deg, #FFF 0%, var(--color-brand-primary-lighter) 100%)",
-        boxShadow:
-          "0px 1px 0.1px 0px rgba(54, 166, 56, 0.25), 0px 4px 7.7px 0px rgba(54, 166, 56, 0.13), 0px -1px 5.5px 0px rgba(54, 166, 56, 0.20) inset, 0px 2px 2.7px 2px #FFF inset",
+        backgroundImage: `url(${
+          deviceType === screenType.PC ? HeaderPCBG : HeaderMBBG
+        })`,
+        backgroundPosition: "center",
       }}
     >
       <Flex
         justify="space-between"
         align="center"
-        className="max-w-[1200px] mx-auto md:py-2 py-4 lg:px-8 px-4"
+        className="max-w-[1200px] mx-auto md:py-2 py-4 lg:px-0 px-2"
       >
         <DeviceProvider.MOBILE>
           <Flex align="center" gap={5}>
@@ -45,10 +52,13 @@ export default function BaseHeader({ ...rest }) {
         </DeviceProvider.PC>
 
         <DeviceProvider.TABLET>
-          <Link to="/">
-            <Logo />
-          </Link>
-          <TopNav />
+          <Flex align="center" gap={5}>
+            <BurgerTopNav />
+            <Link to="/">
+              <Logo />
+            </Link>
+          </Flex>
+          {/* <TopNav /> */}
           <UserActionDrawer />
         </DeviceProvider.TABLET>
 
